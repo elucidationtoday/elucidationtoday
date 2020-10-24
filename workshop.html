@@ -127,7 +127,7 @@
                 </div>
             </div>
 
-            <div class="columns is-mobile parent-col " >
+            <div class="columns is-mobile parent-col" >
                 <div class="column is-8 is-offset-4 workshop-dates">
                     <div class="columns is-mobile date-col" style="margin-bottom: 3rem;">
                         <div class="column first-col">
@@ -351,11 +351,15 @@
                     Program Details
                 </h1>
                 <div class="columns details-block">
-                    <div class="price-block column is-2 is-offset-1">Program Fee ₹2199/-</div>
+                    <div class="price-block column is-2 is-offset-1">Program Fee ₹2199/- ( Entire Program )<br><br>
+                        ₹499/- ( One day )<br><br>
+                        ₹799/- ( Two days )
+                    </div>
                     <div class="detail-block column is-8">
                         <h3>What you get?</h3>
                         <ul>
-                            <li>Learn skills from various instructors</li>
+                            <li>Certificate for each skill you learn</li>
+                            <li>Learn skills from instructors from<br> - AMAZON,<br> - EY,<br> - TAJ PALACE,<br> - ESSAR and the like.</li>
                             <li>Mentorship</li>
                             <li>Resume Building</li>
                             <li>GD Preparation</li>
@@ -377,37 +381,53 @@
                 </h1>   
            </div>
 
-           <div class="column is-9 is-offset-2" data-aos="fade-up" data-aos-duration="1000">
+           <div class="column collaborators is-9 is-offset-2" data-aos="fade-up" data-aos-duration="1000">
                <div class="columns is-mobile" >
                    <div class="column is-one-quarter has-text-centered img-left">                       
                    </div>
 
                   <div class="column is-half has-text-centered">
-                    <a href="https://theprojectamara.wordpress.com/">
+                    <a href="https://theprojectamara.wordpress.com/" target="blank_">
                         <div class="column collaborators-project" data-aos="fade-up" data-aos-duration="1000">
-                            The Project Amara
+                            <img src="static/images/workshop/collabs/amara.jpeg">
+                            <div>The Project Amara</div>
                         </div>
                     </a>
                     <!--div class="column collab-link" style="overflow: auto; margin-bottom: 2rem;" data-aos="fade-up" data-aos-duration="1000">
                         https://theprojectamara.wordpress.com/</a>
                     </div-->
-                    <a href="https://impactconnect20.wixsite.com/website">
+                    <a href="https://impactconnect20.wixsite.com/website" target="blank_">
                         <div class="column collaborators-project" data-aos="fade-up" data-aos-duration="2000">
-                            Impact Connect
+                            <img src="static/images/workshop/collabs/impact_connect.jpeg">
+                            <div>Impact Connect</div>
                         </div>
                     </a>
                     <!--div class="column collab-link" style="overflow: auto;  margin-bottom: 2rem" data-aos="fade-up" data-aos-duration="2000">
                         https://impactconnect20.wixsite.com/website</a>
                     </div-->
-                    <a href="https://nia-himalayas.stores.instamojo.com/">
+                    <a href="https://nia-himalayas.stores.instamojo.com/" target="blank_">
                         <div class="column collaborators-project" data-aos="fade-up" data-aos-duration="1000">
-                            NIA Himachal
+                            <img src="static/images/workshop/collabs/nia.jpg">
+                            <div>NIA Himachal</div>
                         </div>
                     </a>
                     <!--div class="column collab-link" style="overflow: auto; margin-bottom: 2rem;" data-aos="fade-up" data-aos-duration="1000">
                         https://nia-himalayas.stores.instamojo.com/</a><br>
                         <a href="https://www.instagram.com/nia.himachal/">Our Instagram</a>
                     </div-->
+                    <a href="https://paridrishya.org/" target="blank_">
+                        <div class="column collaborators-project" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="static/images/workshop/collabs/paridrishya.png">
+                            <div>Paridrishya</div>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/company/thinkscoop/?originalSubdomain=in" target="blank_">
+                        <div class="column collaborators-project" data-aos="fade-up" data-aos-duration="1000">
+                            <img src="static/images/workshop/collabs/think_scoop.jpeg">
+                            <div>Think Scoop</div>
+                        </div>
+                    </a>
+
 
                   </div>
 
@@ -425,7 +445,7 @@
     
     <div class="workshop-apply-button">
         <a href="snapform.html">
-            <span>Join Now</span>        
+            <span><br>J<br>o<br>i<br>n<br><br>N<br>o<br>w<br><br></span>        
         </a>
     </div>
 
@@ -458,6 +478,10 @@
          </div>
     </footer>
     <a id="go-to-top"></a>
+    <div id="snap-popup">
+        <span class="close" onclick="$('#snap-popup').hide();">&times;</span>
+        <img src="static/images/SNAP.jpeg">
+    </div>
   </body>
 </html>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -506,4 +530,11 @@
 
         });
       })();
+
+
+
+    var t = setTimeout(function(){
+        $('#snap-popup').show();
+    }, 3000);
+
 </script>
