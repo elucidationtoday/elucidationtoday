@@ -464,11 +464,16 @@ section{
     }
 }
 @media (max-width: 1100px){
+	.stakeholders-container .tab-content{
+		width: 50%;
+		margin: 50px auto;
+	}
 	.stakeholders-container .tab-container{
-		left: 20%;
+		left: unset;
+		width: 100%;
 	}
 	.stakeholders-container .tab-container .tab-sub-container{
-		left: -20%;
+		left: unset;
 	}
 }
 @media (max-width: 1100px){
@@ -554,14 +559,11 @@ section{
 }
 
 @media (max-width: 650px){
-	.stakeholders-container .tab-container{
-		left: 0%;
-	}
 	.stakeholders-container .tab-container .tab-sub-container{
-		left: 0%;
+		padding: 0;
 	}
-	.stakeholders-container .tab{
-		padding: 15px 15px;
+	.stakeholders-container .tab-content{
+		width: 80%;
 	}
 }
 
@@ -644,8 +646,14 @@ section{
 		font-size: 16px;
 	}
 	.stakeholders-container .tab{
-		padding: 15px 8px;
-		margin-left: 10px;
+		padding: 15px;
+		margin-left: 5px;
+	}
+	.stakeholders-container .tab img{
+		height: 30px;
+	}
+	.popup-form .popup-form-container{
+		width: 350px !important;
 	}
 }
 @media (max-width: 380px){
@@ -711,19 +719,16 @@ section{
 	.stakeholders-container .tab-content .tab-title{
 		font-size: 25px;
 	}
-}
-@media (max-width: 355px){
 	.stakeholders-container .tab img{
 		height: 25px;
 	}
-	.stakeholders-container .tab{
-		padding: 5px 3px;
-		margin-left: 3px;
+	.popup-form .popup-form-container{
+		width: 300px !important;
 	}
 }
-@media (max-width: 332px){
+@media (max-width: 340px){
 	.stakeholders-container .tab{
-		padding: 5px 2px;
+		padding: 10px 5px;
 		margin-left: 2px;
 	}
 	.stakeholders-container .common-button{
