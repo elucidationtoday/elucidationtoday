@@ -79,6 +79,10 @@ section{
 	font-size: 24px;
 	font-family: 'SF-UI-Light';
 }
+.main-section-block .sub-text{
+	font-size: 18px;
+	font-family: 'SF-UI-Light';
+}
 
 .main-section-block .head-text{
 	margin-top: 10px;
