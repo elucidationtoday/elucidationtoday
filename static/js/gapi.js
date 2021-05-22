@@ -7,14 +7,13 @@ function makeApiCall(type) {
   var request = gapi.client.sheets.spreadsheets.values.get(params);
   request.then(function(response) {
     // TODO: Change code below to process the `response` object:
-    console.log(response.result);
     if(type=='all'){
       display_all(response.result);
     }else if(type=='blog'){
       display(response.result);      
     }
   }, function(reason) {
-    console.error('error: ' + reason.result.error.message);
+    //console.error('error: ' + reason.result.error.message);
   });
 }
 
@@ -71,7 +70,6 @@ function display(result){
     var url = new URL(current_url);
 	var blog_slug = url.searchParams.get("blog");
 	var prefix = "https://medium.com/elucidationtoday/";
-    console.log(blog_slug);
     for(var row=1;row<len;row++){
 			if(prefix+blog_slug == result.values[row][link_col]){
 				document.getElementById('blog-container').innerHTML = result.values[row][data_col];
@@ -83,14 +81,43 @@ function display(result){
     }    
 }
 
+
+function createPagination(pages){
+  var blog_prefix = '/blog?page=';
+  var pagination = '';
+  for(var i=0;i<=pages;i++){
+    var page_no = i+1;
+    pagination = pagination + `
+    <div>
+      <a href="`+blog_prefix+i.toString()+`">`+page_no.toString()+`</a>
+    </div>`;
+  }
+  document.getElementById('blogs-pagination').innerHTML = pagination;
+}
+
 function display_all(result){
-  var len = result.values.length
+  var len = result.values.length;
+  var url = new URL(window.location.href);
+  var page = parseInt(url.searchParams.get("page"));
+  var maxPerPage = 12;
+  var startingRow = maxPerPage*page;
+  var endingRow = maxPerPage*(page+1);
+  var totalPages = Math.floor(len/maxPerPage);
+  if(page >= Math.floor(len/maxPerPage)){
+    page = Math.floor(len/maxPerPage);
+    startingRow = maxPerPage*page;
+    endingRow = startingRow + len%maxPerPage;
+  }else if(page < 0){
+    page = 0;
+    startingRow = maxPerPage*page;
+    endingRow = maxPerPage*(page+1);
+  }
   var data_col=2;
   var link_col=1;
   var html = '';
   var html_object = '';
   var blog_detail_prefix = '/blog-details?blog=';
-    for(var row=1;row<len;row++){
+    for(var row=startingRow+1;row<=endingRow;row++){
       try{
       var blog_slug = result.values[row][link_col].split('/')[result.values[row][link_col].split('/').length-1];
       var blog_url = blog_detail_prefix + blog_slug;
@@ -100,12 +127,16 @@ function display_all(result){
       main_picture.removeAttribute("width");
       main_picture.removeAttribute("height");
       main_picture = main_picture.outerHTML;
-      var author = html_object.find('div.gb a')[1]
-      author.href = '';
-      author = author.outerHTML;
-      var date = html_object.find('div.gb a')[2]
-      date.href = '';
-      date = date.outerHTML;
+      var author = '';
+      var date = '';
+      if(html_object.find('div.gb a').length > 0){
+        author = html_object.find('div.gb a')[1]
+        author.href = '';
+        author = author.outerHTML;
+        date = html_object.find('div.gb a')[2]
+        date.href = '';
+        date = date.outerHTML;        
+      }
       var first_para = html_object.find('p')[0].outerHTML
       html = html +
       `<div class="blog-block column is-4">
@@ -123,4 +154,5 @@ function display_all(result){
       catch(err){console.log(err)}
     }
     document.getElementById('all-blogs-container').innerHTML = html;
+    createPagination(totalPages);
 }
