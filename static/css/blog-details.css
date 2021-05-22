@@ -69,6 +69,24 @@ p{
 	height: 70px;
 	overflow: hidden;
 }
+.pagination{
+	width: 300px;
+	margin: auto;
+}
+.pagination div{
+	margin: 5px;
+	transition: 0.3s;
+}
+.pagination div a{
+	padding: 5px 10px;
+	color: #FDF7E8;
+	background: #4a949f;
+	border-radius: 2px;
+}
+.pagination div a:hover{
+	color: #FDF7E8 !important;
+	padding: 7px 10px;
+}
 
 @media (max-width: 768px){
 	#blog-container .ab.ac.ae.af{
