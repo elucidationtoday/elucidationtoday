@@ -455,6 +455,7 @@ section{
 	color: var(--white);
 	font-family: 'SF-UI-Thin';
 	margin-top: 50px;
+	margin-bottom: 30px;
 }
 
 @media (max-width: 1400px){
