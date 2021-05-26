@@ -98,7 +98,12 @@ function createPagination(pages){
 function display_all(result){
   var len = result.values.length;
   var url = new URL(window.location.href);
-  var page = parseInt(url.searchParams.get("page"));
+  var page = url.searchParams.get("page");
+  if(!page){
+    page = 0;    
+  }else{
+    page = parseInt(page);
+  }
   var maxPerPage = 12;
   var startingRow = maxPerPage*page;
   var endingRow = maxPerPage*(page+1);
