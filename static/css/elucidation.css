@@ -309,7 +309,29 @@
       #inst_career, #inst_skill, #inst_comm, #inst_resume, #inst_it, #inst_mentor {display: none;}
 	#intro a {text-decoration: none !important;}
 
-
+.information-bar{
+  background: #EA526F;
+  color: #FDF7E8;
+  margin-top: 52px;
+  overflow: hidden;
+  transition: 1s;
+}
+.information-bar .info-title{
+  display: inline-block;
+  margin: 20px;
+}
+.information-bar .info-buttons{
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+.information-bar .info-buttons div{
+  display: inline-block;
+  border: 1px solid #4a4a4a;
+  padding: 5px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
 /*
 Abhishek CSS
 */
@@ -505,6 +527,10 @@ Abhishek CSS
   .diversity-text{
     margin-bottom: 50px;
   }
+  .information-bar{
+    margin-top: 0px;
+  }
+
 }
 /* About */
 
@@ -887,7 +913,7 @@ Abhishek CSS
   transition:0.3s;
   transform: rotateY(90deg);
   transform-origin: right;
-  box-shadow: 2px 2px 2px #4a4a4a;
+  box-shadow: 2px 2px 2px rgba(74,74,74,0.3);
 }
 .show-mobile-menu{
   transform: rotateY(0deg);
@@ -1053,6 +1079,15 @@ Abhishek CSS
   #snap-popup .close{
     color: #111;
     right: 20px;
+  }
+  .information-bar{
+    text-align: center;
+  }
+  .information-bar .info-buttons{
+    position: relative;
+    top: unset;
+    right: unset;
+    padding-bottom: 10px;
   }
 
 
