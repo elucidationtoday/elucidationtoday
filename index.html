@@ -66,7 +66,7 @@
 	  		<div class="navbar-menu" id="navbarMenuHero">
 	  			<div class="navbar-end">
 	  				<a class="navbar-item" href="index">Elucidation Today</a>
-	  				<a class="navbar-item coderstodayLink" href="/coderstoday/index">Coders Today</a>
+	  				<a class="navbar-item coderstodayLink" href="coderstoday/index">Coders Today</a>
 	  				<a class="navbar-item" href="about-us">About</a>
 
 		 			<div class="navbar-item has-text-centered has-dropdown is-hoverable">
@@ -122,6 +122,7 @@
     	<div class="nav-column" onclick="openMobileMenu(this)">
     		<i class="fas fa-bars"></i><div class="nav-text">More</div>
 	       	<div class="mobile-menu">
+	            <a href="coderstoday/index">Coders Today</a>
 	            <a href="blog">Blogs</a>
 	            <a href="careers">Work With Us</a>
 	            <a href="mentors">Mentors</a>
@@ -130,6 +131,15 @@
 	  </div>
 	</div>
 	<!--END NAVBAR-->
+	<div class="information-bar" id="info-bar">
+		<div class="container">
+			<div class="info-title">Checkout our upcoming events</div>
+			<div class="info-buttons">
+				<div onclick="window.location.href='events'">Checkout</div>
+				<div onclick="hideInfoBar()">Dismiss</div>
+			</div>
+		</div>
+	</div>
 	<section class="hero is-medium is-main">
 		<div class="hero-body">
 			<div class="mtop-mobile columns is-vcentered">
@@ -769,7 +779,14 @@
 		navigationSwipe: true
 	});
 	</script>
+	<script type="text/javascript">
+		function hideInfoBar(){
+			var infoBar = document.getElementById('info-bar');
+			infoBar.style.display = "none";
+		}
 
+		setTimeout(hideInfoBar, 10000);
+	</script>
 
 
   <script type="text/javascript">

@@ -19,8 +19,40 @@
 	display: none;
 }
 
-
-
+.upcoming-events{
+	text-align: center;
+	/*background: linear-gradient(180deg, #4a949f 30%, #FDF7E8 70%);*/
+	background: #FDF7E8;
+}
+.upcoming-events .events-title{
+	font-size: 32px;
+	padding: 20px 0;
+	text-align: left;
+	border-bottom: 1px solid #4a4a4a;
+	margin-bottom: 10px;
+}
+.upcoming-events .events-details{
+	padding: 50px 0;
+}
+.upcoming-events .events-showcase .image-container img{
+	max-height: 450px;
+}
+.upcoming-events .events-details>div{
+	display: inline-block;
+	margin: 0 30px;
+}
+.upcoming-events .events-details .download-brochure div a{
+	cursor: pointer;
+	color: #4a4a4a;
+}
+.upcoming-events .events-details .registration-button div{
+	display: inline-block;
+	cursor: pointer;
+	margin-top: 20px;
+	padding: 10px 30px;
+	background: #4a949f;
+	color: #FDF7E8;
+}
 
 .view-gallery{
 	width: 0%;
@@ -39,6 +71,15 @@
 	.galleries .gallery-wrap{
 		width: 40%;
 		margin: auto;
+	}
+}
+@media only screen and (max-width: 768px){
+	.have-space-top{
+		padding: 0;
+	}
+	.upcoming-events .events-title{
+		font-size: 24px;
+		margin-left: 20px;
 	}
 }
 @media only screen and (max-width: 500px){
