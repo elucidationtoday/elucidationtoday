@@ -29,17 +29,9 @@ const mentors = [{
 	"name": 'Abhishek Munjal',
 	"image": '../static/coderstoday/images/mentors/abhishek_munjal.jpg',
 	"image_type": 'jpg',
-	"designation": 'Python Developer',
+	"designation": 'Software Developer',
 	"webp_image": "",
 	"linkedin": 'https://www.linkedin.com/in/abhishek-munjal-619017a9/'
-},
-{
-	"name": 'Deepa Rohilla',
-	"image": '../static/coderstoday/images/mentors/deepa_rohilla.jpeg',
-	"image_type": 'jpg',
-	"designation": 'Java Developer',
-	"webp_image": "",
-	"linkedin": 'https://www.linkedin.com/in/deepa-rohilla-158422185/'
 }];
 
 
