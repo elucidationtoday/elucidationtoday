@@ -39,7 +39,7 @@
 }
 .upcoming-events .events-details>div{
 	display: inline-block;
-	margin: 0 30px;
+	margin-right: 30px;
 }
 .upcoming-events .events-details .download-brochure div a{
 	cursor: pointer;
@@ -52,6 +52,42 @@
 	padding: 10px 30px;
 	background: #4a949f;
 	color: #FDF7E8;
+}
+.upcoming-events .events-details .registration-button .closed{
+	display: inline-block;
+	cursor: pointer;
+	margin-top: 20px;
+	padding: 10px 30px;
+	background: #EA526F;
+	color: #FDF7E8;
+}
+
+.event-item .events-description{
+	padding: 50px 0;
+}
+.event-item .events-description .columns{
+	text-align: left;
+}
+.event-item .events-description .column{
+	padding: 0 50px;
+}
+.event-item .events-description .desc-heading{
+	font-size: 28px;
+	margin: 20px 0;
+	text-align: center;
+}
+.event-item .events-description .desc-sub-title{
+	font-size: 20px;
+	font-weight: bold;
+	color: #4a949f;
+	margin: 20px 0;
+}
+.event-item .events-description .desc-sub-title > div{
+	font-size: 16px;
+	color: #EA526F;
+}
+.event-item .events-description .desc-sub-points{
+	font-size: 18px;
 }
 
 .view-gallery{
@@ -81,10 +117,17 @@
 		font-size: 24px;
 		margin-left: 20px;
 	}
+	.event-item .events-description .column{
+		padding: 0 100px;
+	}
+
 }
 @media only screen and (max-width: 500px){
 	.galleries .gallery-wrap{
 		width: 80%;
 		margin: auto;
+	}
+	.event-item .events-description .column{
+		padding: 0 20px;
 	}
 }
