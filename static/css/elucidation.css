@@ -783,13 +783,39 @@ Abhishek CSS
 
 .mentors-pen{
  }
+.columns.mentor-section{
+  width: 80%;
+  margin: auto;
+ }
 .mentors-details img{
   border-radius: 50%;
-  height: 150px;
+  height: 100px;
   margin-right: 10px;
 }
+.mentors-details .level.is-mobile{
+  display: inline-block;
+  width: 50%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.mentors-head-text{
+  text-align: left;
+}
 .mentors-details .level.is-mobile .level-item{
-  margin:0;
+  margin: 0;
+  flex-grow: unset;
+}
+.mentors-details .level.is-mobile .level-left{
+  align-items: baseline;
+}
+.mentors-details .text-detail h1{
+  font-size: 22px;
+}
+.mentors-details .text-detail h6{
+  font-size: 14px;
+}
+.mentors-details .text-detail strong{
+  margin-top: 20px;
 }
 .be-mentor-img img{
   max-height: 350px;
@@ -798,6 +824,16 @@ Abhishek CSS
    color: #FFF;
    border-radius: 20px; 
 }
+@media only screen and (max-width:  1200px){
+  .columns.mentor-section{
+    width: 90%;
+  }  
+}
+@media only screen and (max-width:  1000px){
+  .columns.mentor-section{
+    width: 100%;
+  }  
+}
 @media only screen and (max-width: 768px){
   .mentors-details .text-detail{
     text-align: center;
@@ -805,6 +841,14 @@ Abhishek CSS
   }
   .mentors-details img{
     margin-right: 0;
+  }
+  .mentors-details .level.is-mobile{
+    display: block;
+    width: auto;
+    margin-bottom: 3rem;
+  }
+  .mentor-container{
+    padding-bottom: 0;
   }
 }
 /* Mentors */
