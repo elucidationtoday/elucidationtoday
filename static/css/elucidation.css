@@ -240,6 +240,16 @@
 
       #press img {padding-top: 20px;}
 
+.testimonial .media-content .mySlides .content{
+  display: flex;
+}
+.testimonial .media-content .mySlides .content img{
+  max-height: 250px;
+  margin-right: 20px;
+}
+.testimonial .media-content .mySlides .content div{
+}
+
 	@media(max-width: 767px) {
         .navbar.is-fixed-top{
           position: relative;
@@ -260,7 +270,15 @@
         .logo-mobile{
           display: block;
         }
-
+        .testimonial .media-content .mySlides .content{
+          display: block;
+        }
+        .testimonial .media-content .mySlides .content img{
+          max-height: 150px;
+          margin-right: 0px;
+          display: block;
+          margin: auto;
+        }
 
         
 
