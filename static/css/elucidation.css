@@ -249,6 +249,9 @@
 }
 .testimonial .media-content .mySlides .content div{
 }
+.testimonial .media-content .mySlides .level-item strong{
+  margin-right: 10px;
+}
 
 	@media(max-width: 767px) {
         .navbar.is-fixed-top{
@@ -278,6 +281,12 @@
           margin-right: 0px;
           display: block;
           margin: auto;
+        }
+        .testimonial .media-content .mySlides .level-item, .testimonial .media-content .mySlides .level-right, .testimonial .media-content .mySlides .level-item strong{
+          display: block;
+        }
+        .testimonial .media-content .mySlides .level-item strong{
+          margin-right: 0px;
         }
 
         
