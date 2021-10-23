@@ -140,7 +140,7 @@
     	.navbar-dropdown {background-color: #FDF7E8 !important; }
 
     	.activeNav, .navbar {background-color: #FDF7E8; text-align: center; font-family: 'Lexend Deca', sans-serif;}
-
+      .navbar.is-fixed-bottom, .navbar.is-fixed-top{z-index: 999;}
     	.is-main{
     	   background-color:  #FDF7E8;    		
     	}
@@ -322,7 +322,7 @@
       .menu-label, .menu-list a {color: rgb(74,148,159) ; text-decoration: none; list-style-type: disc; }
       .menu-list a:hover {background-color:  #FDF7E8; color: rgb(74,148,159) !important; text-decoration: underline; }
 
-      #career ul, #skills ul, #communication ul, #resume ul, #it ul, #psdt ul, #faculty ul, #mentors ul, #startup ul {list-style-type: disc !important; margin-left: 20px;}
+      #career ul, #skills ul, #communication ul, #resume ul, #it ul, #psdt ul, #faculty ul, #mentors ul, #startup ul {list-style-type: disc !important; }
 
       .table {background-color: rgb(74,148,159); color: #FDF7E8;}
       .table thead th, .table th {color: #FDF7E8; }
@@ -404,6 +404,103 @@ Abhishek CSS
 }
 /* Home */
 /* about */
+.all-services{
+  display: flex;
+  align-items: flex-start;
+}
+.all-services .subtitle{
+  font-weight: 700;
+  color: #0B4F57;
+}
+.all-services .services-image-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.all-services .services-image-container div:nth-child(1){
+  flex-basis: 50%;
+}
+.all-services .services-image-container div:nth-child(2){
+  flex-basis: 50%;  
+}
+.all-services .services-image-container figure{
+  cursor: pointer;
+}
+.OpenImage{
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(253,247,232,0.9);
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.CloseImage{
+  color: #4a949f;
+  font-size: 48px;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  cursor: pointer;
+}
+.OpenImageContainer{
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+.OpenImageContainer img{
+  max-width: 100%;
+}
+
+.Bar1,.Bar2,.Bar3{
+    width: 35px;
+    height:2.5px;
+    background-color: #4a4a4a;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.Change .Bar1{
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+     transform: rotate(-45deg) translate(-5px, 6px);
+}
+.Change .Bar2 {opacity: 0;}
+.Change .Bar3{
+    -webkit-transform: rotate(45deg) translate(-5px, -8px);
+     transform: rotate(45deg) translate(-5px, -8px);
+}
+.menu-bar-items{
+  position: relative;
+}
+.menu-bar-items > div:nth-child(2){
+  width: 0;
+  overflow: hidden;
+}
+.MenuContainer{
+    cursor: pointer;
+    font-family: 'UbuntuLight';
+    position: absolute;
+    right: -50px;
+    top: 25px;
+    z-index: 10;
+}
+.MenuContainer button{
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+    vertical-align: middle;
+    outline: none;
+}
+.MenuContainer span{
+    color: #4a4a4a;
+    margin-right: 10px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    vertical-align: middle;
+}
+.MenuContainer{
+    transition:0.3s
+}
 
 .illust img{
   transition: 0.3s;
