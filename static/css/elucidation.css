@@ -99,6 +99,13 @@
 			background-image: linear-gradient(45deg, #0B4F57, #43C6AC);
 			border-color: #0B4F57 !important;
 		}
+    @media (min-width: 769px){
+      .hero.is-medium  .hero-body{padding: 3rem 1.5rem;}
+    }
+    #handshake{
+      height: 100px;
+      margin-bottom: 20px;
+    }
     .have-space-top{
       padding-top: 50px;
       padding-right: 0px;
@@ -204,7 +211,7 @@
 
   		hr{width: 60%; margin: 50px auto; background-color: hsl(0, 0%, 48%);  opacity: 50%}
 
-  		.testimonial, #about, #end {background-color: #FDF7E8; }
+  		.testimonial, #about {background-color: #FDF7E8; }
 
   		
   		.mySlides {display: none;  }
@@ -911,16 +918,23 @@ Abhishek CSS
   width: 80%;
   margin: auto;
  }
+.mentors-details{
+  padding: 0;
+  text-align: center;
+  margin-top: 50px;
+}
+.mentors-details .level{
+  width: 30%;
+  margin: auto;
+}
 .mentors-details img{
-  border-radius: 50%;
-  height: 100px;
-  margin-right: 10px;
+  width: 100%;
+  max-height: 300px;
 }
 .mentors-details .level.is-mobile{
   display: inline-block;
-  width: 50%;
-  padding-left: 20px;
   box-sizing: border-box;
+  vertical-align: top;
 }
 .mentors-head-text{
   text-align: left;
@@ -932,6 +946,12 @@ Abhishek CSS
 .mentors-details .level.is-mobile .level-left{
   align-items: baseline;
 }
+.mentors-details .text-detail > div{
+  width: 300px;
+  text-align: left;
+  margin: auto;
+  margin-top: 30px;
+}
 .mentors-details .text-detail h1{
   font-size: 22px;
 }
@@ -940,6 +960,9 @@ Abhishek CSS
 }
 .mentors-details .text-detail strong{
   margin-top: 20px;
+}
+.be-mentor-img{
+  text-align: right;
 }
 .be-mentor-img img{
   max-height: 350px;
@@ -1315,3 +1338,107 @@ Abhishek CSS
   }
 }
 /* FEATURED IN */
+
+
+/* ABOUT */
+.about-us .introduction{
+  text-align: center;
+}
+.about-us .introduction .title{
+  font-size: 36px;
+  color: #0B4F57;
+  font-weight: bold;
+}
+.about-us .introduction p{
+  margin-bottom: 30px;
+}
+.about-us .display-services{
+  margin-top: 100px;
+  text-align: center;
+}
+.about-us .services-icons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+.about-us .display-services .service-title{
+  color: #0B4F57;
+  font-size: 36px;
+  font-weight: bold;
+}
+.services-icons .item img{
+  height: 150px;
+}
+.services-icons .item .service-subtitle{
+  font-size: 18px;
+  color: #0B4F57;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.about-contact{
+  background: #4a949f;
+}
+.about-contact-desc{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-contact-desc div:nth-child(2){
+  color: #FDF7E8;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 18px;
+}
+.about-contact-desc div:nth-child(2) a{
+  color: #FDF7E8;
+}
+.about-contact-desc div:nth-child(2) a:hover{
+  color: #4a4a4a;
+}
+
+
+.mentor-container .mentor-sub-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+.mentor-sub-container > div{
+  flex-basis: 50%;
+}
+.mentor-sub-container .title{
+  color: #0B4F57;
+}
+.mentor-sub-container .be-mentor-link span{
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.mentor-sub-container .be-mentor-link{
+  margin-top: 30px;
+}
+
+.be-mentor-map div{
+  margin: 30px 0;
+}
+.be-mentor-map div:nth-child(2){
+  width: 70%;
+  margin: auto;
+}
+.be-mentor-map .title{
+  color: #0B4F57;
+}
+
+.mentor-section .title{
+  color: #0B4F57;
+  text-align: center;
+  font-size: 36px;
+}
+
+.mentor-section .mentors-details .level-left{
+  display: block;
+}
+/* ABOUT */
