@@ -15,8 +15,14 @@
 		}
 	}
 
- 
-  const fileInput = document.querySelector('#file-js-example input[type=file]');
+  function alterOtherTextBox(e){
+    if(e.target.checked){
+      $("#other-option").show();
+    }else{
+      $("#other-option").hide();
+    }
+  }
+/*  const fileInput = document.querySelector('#file-js-example input[type=file]');
   fileInput.onchange = () => {
     if (fileInput.files.length > 0) {
     	file = fileInput.files[0].name;
@@ -37,7 +43,7 @@
       reader.readAsDataURL(file);
     }
   }
-
+*/
   
    (function()
       {
@@ -104,23 +110,19 @@
   			alert("Please enter your email");
   			return ["Error"];
   		}
-		if(!mailformat.test($('#email').val()))
-		{
-  			alert("Please enter a valid email");
-  			return ["Error"];
-		}
+  		if(!mailformat.test($('#email').val()))
+  		{
+    			alert("Please enter a valid email");
+    			return ["Error"];
+  		}
   		if ((!$('#phone').val()) || (!($('#phone').val().length == 10))){
   			alert("Please enter a valid contact number");
   			return ["Error"];
   		}
-  		if (!$('#dob').val()){
-  			alert("Please enter your date of birth");
-  			return ["Error"];
-  		}
-  		if (!$('#address').val()){
-  			alert("Please enter your address");
-  			return ["Error"];
-  		}
+      if (!$('input[name="qualification"]').val() || !$('input[name="field-study"]').val() || !$('input[name="institution"]').val() || !$('input[name="workex"]:checked').val() ){
+        alert("Please enter all the fields");
+        return ["Error"];
+      }
   		return true;
   	}
 
@@ -155,7 +157,7 @@
   		return true;
   	}
 
-  	function validateStep3(){
+  	/*function validateStep3(){
   		if (!$('#careerInterests').val()){
   			alert("Please tell us some of your interests");
   			return ["Error"];
@@ -167,7 +169,7 @@
   		/*if (!$('#fileContent').val()){
   			alert("Please upload any of your writing sample here");
   			return ["Error"];
-  		}*/
+  		}*
   		return true;
   	}
 
@@ -199,22 +201,22 @@
     		}
       }
   		return true;
-  	}
+  	}*/
  var steps = new bulmaSteps.attach("#stepsDemo", {
     beforeNext: function( step_id ) {
         switch( step_id ) {
           case 0:
-          	return validateStep1();
+          	//return validateStep1();
             break;
           case 1:
           	return validateStep2();
           	break;
-          case 2:
+          /*case 2:
           	return validateStep3();
             break;
           case 3:
           	return validateStep4();
-          	break;
+          	break;*/
           }
       },
     onShow: (id) => {

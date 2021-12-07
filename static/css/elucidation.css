@@ -1050,8 +1050,27 @@ Abhishek CSS
   font-size: 48px;
   cursor: pointer;
 }
-
-
+#other-option{
+  margin: 10px 0;
+}
+.workExCheckboxes{
+  margin-left: 20px;
+  color: #FDF7E8;
+}
+.workExCheckboxes .control{
+  text-align: left;
+  margin-top: 5px;
+}
+.workExCheckboxes .control input[type="radio"]{
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+}
+.workExCheckboxes .control input[type="checkbox"]{
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+}
 /* specific to SNAP */
 
 @media only screen and (max-height: 500px){
