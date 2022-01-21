@@ -65,7 +65,7 @@
   		window.location.href = url;
   	}
 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbw3S8luRh6sKJic4iQ3EzxrzoG0vZsHIc3yCcKh3c_mmN72Rx-EoqxKp70vkeo8hWhGEg/exec'
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyEfOn7hVdb1150VIDSJqesAhvKHtYeRWwtGNgJaOGpDHcwqpbzB2Z1lz3eo0u_wGDT_Q/exec'
     const form = document.forms['book_session_form']
 
     form.addEventListener('submit', e => {
