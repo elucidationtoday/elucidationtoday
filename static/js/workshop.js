@@ -60,14 +60,13 @@
 
       	});
       })();
-  
-  
+
   	function redirect(url){
   		window.location.href = url;
   	}
 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzDN837pLawek9pRW4Xf4yGH-TVJ7ptLA2NafGVSQ/exec'
-    const form = document.forms['workshop_form']
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw3S8luRh6sKJic4iQ3EzxrzoG0vZsHIc3yCcKh3c_mmN72Rx-EoqxKp70vkeo8hWhGEg/exec'
+    const form = document.forms['book_session_form']
 
     form.addEventListener('submit', e => {
             e.preventDefault();
@@ -120,38 +119,34 @@
   			return ["Error"];
   		}
       if (!$('input[name="qualification"]').val() || !$('input[name="field-study"]').val() || !$('input[name="institution"]').val() || !$('input[name="workex"]:checked').val() ){
-        alert("Please enter all the fields");
+        alert("Please fill all the fields");
         return ["Error"];
       }
   		return true;
   	}
 
   	function validateStep2(){
-  		if (!$('#course').val()){
-  			alert("Please enter the course");
+  		if (!$('.workExCheckboxes input[type="checkbox"]:checked').val()){
+  			alert("Please choose a service");
   			return ["Error"];
   		}
-  		if (!$('#college').val()){
-  			alert("Please enter your college");
+      if($('input[id="other-checkbox"]:checked').val()){
+        if(!$('#other-option').val()){
+          alert("Please specify the other option");
+          return ["Error"];
+        }
+      }
+  		if (!$('input[name="slot"]:checked').val()){
+  			alert("Choose a time slot of your preference");
   			return ["Error"];
   		}
-  		if (!$('#university').val()){
-  			alert("Please enter your university");
+  		if (!$('#description').val()){
+  			alert("Please fill all the fields");
   			return ["Error"];
   		}
-      if($('[name="working"]:checked').length > 0){
-        if (!$('#domain').val()){
-          alert("Please tell us the domain you work in");
-          return ["Error"];
-        }
-        if (!$('#company').val()){
-          alert("Please tell us your company");
-          return ["Error"];
-        }
-        if (!$('#workex').val()){
-          alert("How much work experience do you have in "+($('#domain').val()));
-          return ["Error"];
-        }
+      if (!$('#other-detail').val()){
+        alert("Please fill all the fields");
+        return ["Error"];
       }
 
   		return true;
@@ -206,17 +201,11 @@
     beforeNext: function( step_id ) {
         switch( step_id ) {
           case 0:
-          	//return validateStep1();
+          	return validateStep1();
             break;
           case 1:
           	return validateStep2();
           	break;
-          /*case 2:
-          	return validateStep3();
-            break;
-          case 3:
-          	return validateStep4();
-          	break;*/
           }
       },
     onShow: (id) => {
