@@ -130,7 +130,7 @@
 
 
 
-        <section class="hero comm">
+        <section class="hero comm" id="services-head">
             <div class="hero-body has-text-centered">
                 <div class="container">
                     <h1 class="title comm-title">
@@ -138,10 +138,14 @@
                     </h1>
                 </div>
             </div>
-            
+            <div class="fixed-button-services">
+                <a href="book-a-session">
+                    <div class="button">Book a session</div>
+                </a>
+            </div>
         </section>   
         <section class="section is-main">
-        <div class="container">
+        <div class="container" id="services-start">
          <div class="columns is-vcentered">
              <!--<div class="column is-narrow pl-5 pb-2" id="services">
                  <aside class="menu">
@@ -1020,7 +1024,6 @@
     AOS.init();
 </script>
 <script>
-    
      function openTab(event, tabName)
      {
         event.preventDefault();
@@ -1039,7 +1042,20 @@
 
      }
 
-
+    $(document).ready(function() {
+        var s = $("#services-head");
+        var pos = s.position();                    
+        $(window).scroll(function() {
+            var windowpos = $(window).scrollTop();
+            if (windowpos >= 51) {
+                s.addClass("services-head-class");
+                $('#services-start').css('margin-top','130px');
+            } else {
+                s.removeClass("services-head-class"); 
+                $('#services-start').css('margin-top','0px');
+            }
+        });
+    });
 </script>
 <script>
     (function()
@@ -1052,9 +1068,6 @@
         {
             burger.classList.toggle('is-active');
             nav.classList.toggle('is-active' );
-            
-
-
         });
       })();
 </script>
