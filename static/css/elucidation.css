@@ -107,7 +107,6 @@
     }
 		.pushUpBtn {
     		padding: 12px 24px;
-   			
     		border-radius: 6px;
     		transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
     		box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
@@ -1270,3 +1269,203 @@ Abhishek CSS
   }
 }
 /* SERVICES */
+
+
+/* ABOUT */
+.about-us .introduction{
+  text-align: center;
+}
+.about-us .introduction .title{
+  font-size: 36px;
+  color: #0B4F57;
+  font-weight: bold;
+}
+.about-us .introduction p{
+  margin-bottom: 30px;
+}
+.about-us .display-services{
+  margin-top: 100px;
+  text-align: center;
+}
+.about-us .services-icons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+.about-us .display-services .service-title{
+  color: #0B4F57;
+  font-size: 36px;
+  font-weight: bold;
+}
+.services-icons .item img{
+  height: 150px;
+}
+.services-icons .item .service-subtitle{
+  font-size: 18px;
+  color: #0B4F57;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.about-contact{
+  background: #4a949f;
+}
+.about-contact-desc{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-contact-desc div:nth-child(2){
+  color: #FDF7E8;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 18px;
+}
+.about-contact-desc div:nth-child(2) a{
+  color: #FDF7E8;
+}
+.about-contact-desc div:nth-child(2) a:hover{
+  color: #4a4a4a;
+}
+
+/* ABOUT */
+
+/* REFER AND EARN */
+.accordion-item.refer-form{
+background-color: transparent;
+margin-bottom: 20px;
+border: 0px;
+border-radius: 0px;
+color: #ffffff;
+cursor: default;
+}
+.referral-policy{
+  text-align: center;
+}
+.referral-policy a{
+    text-decoration: none;
+}
+.referral-policy a:hover{
+  text-decoration: underline;
+}
+.refer-and-earn{
+  padding: 5rem 0;
+}
+.affiliate-img{
+  height: 80px;
+}
+.faq .title{
+  color: #0B4F57;
+}
+.accordions {
+width: 80%;
+margin: 50px auto;
+}
+
+.accordions h3 {
+text-align: center;
+font-weight: bold;
+}
+
+.accordion-item {
+background-color: #4a949f;
+margin-bottom: 20px;
+border: 1px solid #100e34;
+border-radius: 5px;
+color: #ffffff;
+}
+
+.accordion-item .accordion-title {
+cursor: pointer;
+padding: 20px;
+transition: transform 0.4s ease-in-out;
+}
+
+.accordion-item .accordion-title.active-title {
+background-color: #0B4F57;
+color: #ffffff;
+}
+
+.accordion-item .accordion-title h3 {
+font-weight: 700;
+margin: 0;
+font-size: 18px;
+display: flex;
+justify-content: space-between;
+font-weight: bold;
+}
+
+.accordion-item .accordion-title i.fa-chevron-down {
+transform: rotate(0);
+transition: 0.4s;
+}
+
+.accordion-item .accordion-title i.fa-chevron-down.chevron-top {
+transform: rotate(-180deg);
+color: #fa5019;
+}
+
+.accordion-item .accordion-content {
+display: none;
+line-height: 1.7;
+padding: 20px;
+background-color: #ffffff;
+border-radius: 0 0 5px 5px;
+color: #100e34;
+}
+
+.accordion-item .accordion-content.active {
+display: block;
+}
+
+.accordion-item .accordion-content p {
+margin: 0;
+font-size: 16px;
+color: #4a4a4a;
+}
+
+.details {
+background: #dce1f2;
+}
+
+.details .detailed_info {
+margin: 50px auto;
+}
+
+.details img {
+margin: 0 auto;
+display: block;
+/* margin-top: 120px; */
+}
+
+.details h3 {
+font-weight: bold;
+font-size: 20px;
+}
+
+.details p {
+font-size: 16px;
+line-height: 1.5em;
+}
+
+.details ul li {
+font-size: 16px;
+line-height: 1.7em;
+}
+
+button.refer-join-button{
+  background-image: linear-gradient(45deg, rgb(74,148,159), #43C6AC);
+  background-color: #0B4F57;
+  color: #FDF7E8 !important;
+}
+
+#refer-form .radio input{
+  padding: 10px;
+}
+.refer-form{
+  width: 70%;
+  margin: auto;
+}
+/* REFER AND EARN */
