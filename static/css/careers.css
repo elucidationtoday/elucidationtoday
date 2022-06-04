@@ -59,7 +59,7 @@
 .hero{
 	padding-top: 50px;
 	padding-right: 0px;
-	padding-bottom: 25px;
+	padding-bottom: 0px;
 	padding-left: 0px;
 }
 #first-pic{
@@ -153,7 +153,7 @@
   width: 45%;
   height: 90%;
   margin: 0% 5% 5% 50%;
-  padding-top: 5%;
+  padding: 1px 0;
   perspective: 1000px;
 }
 
@@ -212,6 +212,11 @@ and (max-device-width : 800px){
   }
   .page {
   	font-size: 13px;
+  }
+}
+@media (max-width : 768px){
+  .hero{
+  	padding-top: 0;
   }
 }
 
