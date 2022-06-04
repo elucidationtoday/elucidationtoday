@@ -922,17 +922,21 @@ Abhishek CSS
   padding: 0;
   text-align: center;
   margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
 }
 .mentors-details .level{
-  width: 30%;
-  margin: auto;
+  margin: 20px;
 }
 .mentors-details img{
   width: 100%;
   max-height: 300px;
 }
 .mentors-details .level.is-mobile{
-  display: inline-block;
+  flex: 1 1 30%;
+  justify-content: center;
   box-sizing: border-box;
   vertical-align: top;
 }
@@ -1353,7 +1357,7 @@ Abhishek CSS
   margin-bottom: 30px;
 }
 .about-us .display-services{
-  margin-top: 100px;
+  margin-top: 3rem;
   text-align: center;
 }
 .about-us .services-icons{
@@ -1368,14 +1372,24 @@ Abhishek CSS
   font-size: 36px;
   font-weight: bold;
 }
+.about-us .service-subline{
+  margin: 30px 0;
+}
+.about-us .service-subline p{
+  margin: 4px 0;
+}
 .services-icons .item img{
   height: 150px;
 }
 .services-icons .item .service-subtitle{
-  font-size: 18px;
+  font-size: 15px;
   color: #0B4F57;
   font-weight: 700;
   margin-top: 20px;
+}
+.services-icons .item{
+  flex: 1 1 0px;
+  max-width: 400px;
 }
 
 .about-contact{
@@ -1398,7 +1412,12 @@ Abhishek CSS
 .about-contact-desc div:nth-child(2) a:hover{
   color: #4a4a4a;
 }
-
+.map-title, .mentor-title{
+  color: #0B4F57;
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 36px;
+}
 
 .mentor-container .mentor-sub-container{
   display: flex;
