@@ -99,6 +99,13 @@
 			background-image: linear-gradient(45deg, #0B4F57, #43C6AC);
 			border-color: #0B4F57 !important;
 		}
+    @media (min-width: 769px){
+      .hero.is-medium  .hero-body{padding: 3rem 1.5rem;}
+    }
+    #handshake{
+      height: 100px;
+      margin-bottom: 20px;
+    }
     .have-space-top{
       padding-top: 50px;
       padding-right: 0px;
@@ -140,7 +147,7 @@
     	.navbar-dropdown {background-color: #FDF7E8 !important; }
 
     	.activeNav, .navbar {background-color: #FDF7E8; text-align: center; font-family: 'Lexend Deca', sans-serif;}
-
+      .navbar.is-fixed-bottom, .navbar.is-fixed-top{z-index: 999;}
     	.is-main{
     	   background-color:  #FDF7E8;    		
     	}
@@ -204,7 +211,7 @@
 
   		hr{width: 60%; margin: 50px auto; background-color: hsl(0, 0%, 48%);  opacity: 50%}
 
-  		.testimonial, #about, #end {background-color: #FDF7E8; }
+  		.testimonial, #about {background-color: #FDF7E8; }
 
   		
   		.mySlides {display: none;  }
@@ -322,7 +329,7 @@
       .menu-label, .menu-list a {color: rgb(74,148,159) ; text-decoration: none; list-style-type: disc; }
       .menu-list a:hover {background-color:  #FDF7E8; color: rgb(74,148,159) !important; text-decoration: underline; }
 
-      #career ul, #skills ul, #communication ul, #resume ul, #it ul, #psdt ul, #faculty ul, #mentors ul, #startup ul {list-style-type: disc !important; margin-left: 20px;}
+      #career ul, #skills ul, #communication ul, #resume ul, #it ul, #psdt ul, #faculty ul, #mentors ul, #startup ul {list-style-type: disc !important; }
 
       .table {background-color: rgb(74,148,159); color: #FDF7E8;}
       .table thead th, .table th {color: #FDF7E8; }
@@ -404,6 +411,103 @@ Abhishek CSS
 }
 /* Home */
 /* about */
+.all-services{
+  display: flex;
+  align-items: flex-start;
+}
+.all-services .subtitle{
+  font-weight: 700;
+  color: #0B4F57;
+}
+.all-services .services-image-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.all-services .services-image-container div:nth-child(1){
+  flex-basis: 50%;
+}
+.all-services .services-image-container div:nth-child(2){
+  flex-basis: 50%;  
+}
+.all-services .services-image-container figure{
+  cursor: pointer;
+}
+.OpenImage{
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(253,247,232,0.9);
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.CloseImage{
+  color: #4a949f;
+  font-size: 48px;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  cursor: pointer;
+}
+.OpenImageContainer{
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+.OpenImageContainer img{
+  max-width: 100%;
+}
+
+.Bar1,.Bar2,.Bar3{
+    width: 35px;
+    height:2.5px;
+    background-color: #4a4a4a;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.Change .Bar1{
+    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+     transform: rotate(-45deg) translate(-5px, 6px);
+}
+.Change .Bar2 {opacity: 0;}
+.Change .Bar3{
+    -webkit-transform: rotate(45deg) translate(-5px, -8px);
+     transform: rotate(45deg) translate(-5px, -8px);
+}
+.menu-bar-items{
+  position: relative;
+}
+.menu-bar-items > div:nth-child(2){
+  width: 0;
+  overflow: hidden;
+}
+.MenuContainer{
+    cursor: pointer;
+    font-family: 'UbuntuLight';
+    position: absolute;
+    right: -50px;
+    top: 25px;
+    z-index: 10;
+}
+.MenuContainer button{
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+    vertical-align: middle;
+    outline: none;
+}
+.MenuContainer span{
+    color: #4a4a4a;
+    margin-right: 10px;
+    font-size: 18px;
+    letter-spacing: 5px;
+    vertical-align: middle;
+}
+.MenuContainer{
+    transition:0.3s
+}
 
 .illust img{
   transition: 0.3s;
@@ -814,16 +918,27 @@ Abhishek CSS
   width: 80%;
   margin: auto;
  }
+.mentors-details{
+  padding: 0;
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.mentors-details .level{
+  margin: 20px;
+}
 .mentors-details img{
-  border-radius: 50%;
-  height: 100px;
-  margin-right: 10px;
+  width: 100%;
+  max-height: 300px;
 }
 .mentors-details .level.is-mobile{
-  display: inline-block;
-  width: 50%;
-  padding-left: 20px;
+  flex: 1 1 30%;
+  justify-content: center;
   box-sizing: border-box;
+  vertical-align: top;
 }
 .mentors-head-text{
   text-align: left;
@@ -835,6 +950,12 @@ Abhishek CSS
 .mentors-details .level.is-mobile .level-left{
   align-items: baseline;
 }
+.mentors-details .text-detail > div{
+  width: 300px;
+  text-align: left;
+  margin: auto;
+  margin-top: 30px;
+}
 .mentors-details .text-detail h1{
   font-size: 22px;
 }
@@ -843,6 +964,9 @@ Abhishek CSS
 }
 .mentors-details .text-detail strong{
   margin-top: 20px;
+}
+.be-mentor-img{
+  text-align: right;
 }
 .be-mentor-img img{
   max-height: 350px;
@@ -1239,7 +1363,6 @@ Abhishek CSS
 /* FEATURED IN */
 
 
-
 /* SERVICES */
 .fixed-button-services{
   position: relative;
@@ -1270,3 +1393,121 @@ Abhishek CSS
   }
 }
 /* SERVICES */
+
+/* ABOUT */
+.about-us .introduction{
+  text-align: center;
+}
+.about-us .introduction .title{
+  font-size: 36px;
+  color: #0B4F57;
+  font-weight: bold;
+}
+.about-us .introduction p{
+  margin-bottom: 30px;
+}
+.about-us .display-services{
+  margin-top: 3rem;
+  text-align: center;
+}
+.about-us .services-icons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+.about-us .display-services .service-title{
+  color: #0B4F57;
+  font-size: 36px;
+  font-weight: bold;
+}
+.about-us .service-subline{
+  margin: 30px 0;
+}
+.about-us .service-subline p{
+  margin: 4px 0;
+}
+.services-icons .item img{
+  height: 150px;
+}
+.services-icons .item .service-subtitle{
+  font-size: 15px;
+  color: #0B4F57;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.services-icons .item{
+  flex: 1 1 0px;
+  max-width: 400px;
+}
+
+.about-contact{
+  background: #4a949f;
+}
+.about-contact-desc{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-contact-desc div:nth-child(2){
+  color: #FDF7E8;
+  text-align: left;
+  margin-left: 30px;
+  font-size: 18px;
+}
+.about-contact-desc div:nth-child(2) a{
+  color: #FDF7E8;
+}
+.about-contact-desc div:nth-child(2) a:hover{
+  color: #4a4a4a;
+}
+.map-title, .mentor-title{
+  color: #0B4F57;
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 36px;
+}
+
+.mentor-container .mentor-sub-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+.mentor-sub-container > div{
+  flex-basis: 50%;
+}
+.mentor-sub-container .title{
+  color: #0B4F57;
+}
+.mentor-sub-container .be-mentor-link span{
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.mentor-sub-container .be-mentor-link{
+  margin-top: 30px;
+}
+
+.be-mentor-map div{
+  margin: 30px 0;
+}
+.be-mentor-map div:nth-child(2){
+  width: 70%;
+  margin: auto;
+}
+.be-mentor-map .title{
+  color: #0B4F57;
+}
+
+.mentor-section .title{
+  color: #0B4F57;
+  text-align: center;
+  font-size: 36px;
+}
+
+.mentor-section .mentors-details .level-left{
+  display: block;
+}
+/* ABOUT */

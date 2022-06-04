@@ -23,7 +23,7 @@
    
     
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"-->
     <link rel="stylesheet" href="static/css/elucidation.css">
     
     <title>Services • Elucidation Today</title>
@@ -58,23 +58,16 @@
                     <a class="navbar-item" href="index">Elucidation Today</a>
 	  				<!--a class="navbar-item coderstodayLink" href="coderstoday/index">Coders Today</a-->
                     <a class="navbar-item" href="about-us">About</a>
-
                     <div class="navbar-item has-text-centered has-dropdown is-hoverable">
                         <a class="navbar-link is-arrowless" href="services">Services</a>
                         <div class="navbar-dropdown is-boxed is-right">
                             <a class="services-link navbar-item" href="#career">Career Awareness</a>
                             <a class="services-link navbar-item" href="#skills">Skill Development</a>
-                            
                             <a class="services-link navbar-item" href="#mentor">Mentorship</a>
                             <a class="services-link navbar-item" href="#startup">Startup Guidance</a>
                             <a class="services-link navbar-item" href="#faculty">Faculty Training</a>
-
-
                         </div>
                     </div>
-
-
-                    
                     <div class="navbar-item has-text-centered has-dropdown is-hoverable">
                         <a class="navbar-link is-arrowless">More 
                             <span class="icon is-small">
@@ -90,9 +83,7 @@
 
                         </div>
                     </div>
-                    
                 </div>
-
             </div>
             <div class="logo-mobile">
             <a href="index">
@@ -103,11 +94,7 @@
                 </picture>
             </a>
             </div>
-
         </div>
-
-        
-        
      </nav>
     <div class="navigation-bar">
       <div class="nav-row">
@@ -127,9 +114,6 @@
         </div>
       </div>
     </div>
-
-
-
         <section class="hero comm" id="services-head">
             <div class="hero-body has-text-centered">
                 <div class="container">
@@ -186,38 +170,48 @@
 
                 </aside>
              </div>-->
-             <div class="column is-offset-2">
+             <div class="column is-offset-2"></div>
+            </div>  
+        </section>   
+        <section class="section is-main all-services">
+         <div class="columns is-vcentered menu-bar-items">
+             <div class="MenuContainer" onclick="toggleSideBar()">
+                <button type="button" class="" id="menu-bar-icon">
+                    <div class="Bar1"></div>
+                    <div class="Bar2"></div>
+                    <div class="Bar3"></div>
+                </button>
+             </div>
+             <div class="column is-offset-2" id="menu-bar-items">
+>>>>>>> NewlyDesignedPages
                  <ul class="menu-list" id="services">
-                    <li><a href="#career">Career Guidance and Awareness</a></li>
-                    <li><a href="#skills">Skill Development</a>
+                    <li><a onclick="openService('career')">Career Guidance and Awareness</a></li>
+                    <li><a onclick="openService('skills')">Skill Development</a>
                         <ul class="menu-list">
-                            <li><a href="#communication">Communication Skills</a></li>
-                            <li><a href="#resume">Résumé Building</a></li>
-                            <li><a href="#it">Information Technology</a></li>
-                            <li><a href="#psdt">Problem Solving and Design Thinking</a></li>
-
+                            <li><a onclick="openService('communication')">Communication Skills</a></li>
+                            <li><a onclick="openService('resume')">Résumé Building</a></li>
+                            <li><a onclick="openService('it')">Information Technology</a></li>
+                            <li><a onclick="openService('psdt')">Problem Solving and Design Thinking</a></li>
                         </ul>
-
-
                     </li>
-                    <li><a href="#mentor">Mentoring Sessions</a></li>
-                    <li><a href="#startup">Startup Guidance</a></li>
-                    <li><a href="#faculty">Faculty Training</a></li>
-                     
+                    <li><a onclick="openService('mentor')">Mentoring Sessions</a></li>
+                    <li><a onclick="openService('startup')">Startup Guidance</a></li>
+                    <li><a onclick="openService('faculty')">Faculty Training</a></li>
                  </ul>
              </div>
-             <div class="column illust">
+             <!--div class="column illust">
                 <picture>
                   <source type="image/webp" srcset="static/webp_images/analyse-bw.webp">
                   <source type="image/png" srcset="static/images/analyse-bw.png">
                   <img src="static/images/analyse-bw.png" width="85%" height="auto" alt="Services">
                 </picture>
-             </div>
+             </div-->
          </div>
-         <div id="career"></div>
+         <div class="container">
+         <div id="career">
          <br>
          <br>
-         <div class="columns" data-aos="fade-up">
+         <div class="columns">
              <div class="column is-8 is-offset-2">
                  <h1 class="title has-text-centered">
                      Career Guidance and Awareness
@@ -229,120 +223,67 @@
                  <h2 class="subtitle">Why do we need this?</h2>
                  <p>Millions of possible career options have emerged today. The process of <strong>researching various fields, becoming aware of your interests, shortlisting options</strong> and finally reaching a concrete conclusion can become extremely tedious. As a student, it's difficult to even know where to start. With the immense pressure of choosing the right career, students begin their journey under the gloom of stress, tension and anxiety. We help them by providing the appropriate guidance that they deserve:</p>
                  <br>
-                 <h2 class="subtitle"><u>What We Offer</u></h2>
-                 <p>We provide you with both <strong>general</strong> and <strong>specific</strong> career guidance. Our sessions cover: </p>
-                 <!-- <ul>
-                     <li>evaluation of personal interests</li>
-                     <li>possible career opportunities after school and college</li>
-                     <li>selection ofspecific courses during college</li>
-                     <li>research on relevant universities</li>
-                     <li>going for the right internships</li>
-                     <li>fellowship programmes</li>
-                     <li>job prospects</li>
-                     <li>Ikigai</li>
-                     <li>SWOT (Strengths, Weaknesses, Opportunities and Threats) analysis</li>
-                 </ul> -->
-                 <div data-aos="fade-up" data-aos-duration="1000">
-					<figure class="image service-image">
-						<picture>
-                          <source type="image/webp" srcset="static/webp_images/services/Picture11.webp">
-                          <source type="image/png" srcset="static/images/services/Picture11.png">
-                          <img src="static/images/services/Picture11.png">
-                        </picture>
-					</figure>
-				 </div>
-                 <br>
-                 <h2 class="subtitle">How do we do this?</h2>
-                 <p>We provide guidance and spread awareness through</p>
-                 <!-- <ul>
-                     <li>webinars</li>
-                     <li>workshops</li>
-                     <li>one-on-one sessions</li>
-                     <li>group sessions</li>
-                 </ul> -->
-                 <div data-aos="fade-up" data-aos-duration="1000">
-					<figure class="image service-image">
-                        <picture>
-                          <source type="image/webp" srcset="static/webp_images/services/Picture3.webp">
-                          <source type="image/png" srcset="static/images/services/Picture3.png">
-                          <img src="static/images/services/Picture3.png">
-                        </picture>
-					</figure>
+                 <div class="services-image-container">
+                    <div>
+                     <h2 class="subtitle">What We Offer</h2>
+                     <p>We provide you with both <strong>general</strong> and <strong>specific</strong> career guidance. Our sessions cover: </p>
+                    </div>
+                     <div>
+    					<figure class="image service-image">
+    						<picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture11.webp">
+                              <source type="image/png" srcset="static/images/services/Picture11.png">
+                              <img src="static/images/services/Picture11.png">
+                            </picture>
+    					</figure>
+    				 </div>
                  </div>
                  <br>
-                 <h2 class="subtitle">Why should you choose <b>Elucidation Today</b>?</h2>
-                 <ul>
-                     <li>flexible and customisable modules based on your interests and qualification</li>
-                     <li>connections with recent graduates of top institutions</li>
-                     <li><a>mentorship programmes</a></li>
-
-                 </ul>
-                 <br>
-                 <div data-aos="fade-up" class="make-image-readable" data-aos-duration="1000">
-					<figure class="image service-image">
-                        <picture>
-                          <source type="image/webp" srcset="static/webp_images/services/Picture19.webp">
-                          <source type="image/png" srcset="static/images/services/Picture19.png">
-                          <img src="static/images/services/Picture19.png">
-                        </picture>
-					</figure>
+                 <div class="services-image-container">
+                     <div>
+    					<figure class="image service-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture3.webp">
+                              <source type="image/png" srcset="static/images/services/Picture3.png">
+                              <img src="static/images/services/Picture3.png">
+                            </picture>
+    					</figure>
+                     </div>
+                     <div>
+                         <h2 class="subtitle">How do we do this?</h2>
+                         <p>We provide guidance and spread awareness through</p>
+                     </div>
                  </div>
-                 <!-- <div class="table-container">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th><b>Elucidation Today</b></th>
-                                <th>Others</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>Manner</th>
-                                <td>Presents options for you to choose from, based on your interests</td>
-                                <td>Tell you what to do</td>
-                            </tr>
-                            <tr>
-                                <th>Approach</th>
-                                <td>Ensures you have the skills to work in the industry or organisation you want</td>
-                                <td>Claim to get you your dream job</td>
-                            </tr>
-                            <tr>
-                                <th>Startup Guidance</th>
-                                <td>Lends support for your startup</td>
-                                <td>Would not usually recommend a startup plan</td>
-                            </tr>
-                            <tr>
-                                <th>Methodology</th>
-                                <td>Recognises individual differences, deals with everyone uniquely & helps you achieve what you want</td>
-                                <td>Universal mechanical procedure: aptitude tests, generic guidance based on the limited results and effectively make decisions for you</td>
-                            </tr>
-                            <tr>
-                                <th>System</th>
-                                <td>We have been through it ourselves - we understand where you come from, highly affordable</td>
-                                <td>Membership system for unlocking content, costly</td>
-                            </tr>
-                            <tr>
-                                <th>Duration</th>
-                                <td>We hold your hand throughout the process and walk you to your goal</td>
-                                <td>1-3 consultations that are charged for separately</td>
-                            </tr>
-
-                        </tbody>
-    
-                    </table>
-                </div> -->
-                
+                 <br>
+                 <div class="services-image-container">
+                     <div>
+                         <h2 class="subtitle">Why should you choose <b>Elucidation Today</b>?</h2>
+                         <ul>
+                             <li>flexible and customisable modules based on your interests and qualification</li>
+                             <li>connections with recent graduates of top institutions</li>
+                             <li><a>mentorship programmes</a></li>
+                         </ul>
+                     </div>
+                     <div  class="make-image-readable" >
+    					<figure class="image service-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture19.webp">
+                              <source type="image/png" srcset="static/images/services/Picture19.png">
+                              <img src="static/images/services/Picture19.png">
+                            </picture>
+    					</figure>
+                     </div>
+                 </div>
             </div>
         </div>
         <div class="columns">
             <div class="column is-8 is-offset-2">
                 <br>
-                <h2 class="subtitle"><u>Procedure</u></h2>
+                <h2 class="subtitle">Procedure</h2>
                 <br>
                 <div class="tabs is-toggle is-fullwidth">
                     <ul>
-                        <li class="tab is-active" onclick="openTab(event, 'ind_career')">
+                        <li id="ind_career_tab" class="tab is-active" onclick="openTab(event, 'ind_career')">
                             <a href="">
                                 <span class="icon is-small">
                                     <i class="far fa-user" aria-hidden="true"></i>
@@ -350,7 +291,7 @@
                                 <span>Individuals</span>
                             </a>
                         </li>
-                        <li class="tab" onclick="openTab(event, 'inst_career')">
+                        <li id="inst_career_tab" class="tab" onclick="openTab(event, 'inst_career')">
                             <a href="">
                                 <span class="icon is-small">
                                     <i class="fas fa-university" aria-hidden="true"></i>
@@ -378,16 +319,14 @@
                     <p>After the workshop, we will have feedback and follow-up sessions.</p>
                 </div>
             </div>
-
-
-
              </div>
          </div>
-         <div id="skills"></div>
+
+         <div id="skills">
          <br>
          <br>
          <!--SKILL DEV-->
-            <div class="columns" data-aos="fade-up">
+            <div class="columns" >
              <div class="column is-8 is-offset-2">
                  <h1 class="title has-text-centered">
                      Skill Development
@@ -396,17 +335,9 @@
                      Enhancing your talents and skills
                  </h2>
                  <br>
-                
                  <p>Skill development has become extremely important these days, companies value skills equal to degrees and certifications. Elucidation Today brings to you a range of skill areas that are crucial for a bright career. We have four broad categories covering myriad skills that every working individual should be equipped with today:
                     </p>
-
-                 <!-- <ul>
-                     <li><a href="#communication">Communication Skills</a></li>
-                     <li><a href="#resume">résumé Building</a></li>
-                     <li><a href="#it">Information Technology</a></li>
-                     <li><a href="#psdt">Problem Solving and Design Thinking</a></li>
-                 </ul> -->
-                 <div data-aos="fade-up" data-aos-duration="1000">
+                 <div>
 					<figure class="image service-image">
                         <picture>
                           <source type="image/webp" srcset="static/webp_images/services/Picture13.webp">
@@ -417,24 +348,22 @@
                  </div>
                  <br>
                  <p>For each of these skills, you can join</p>
-                 <ul>
+                 <ol>
                      <li>webinars</li>
                      <li>workshops</li>
                      <li>one-on-one sessions</li>
                      <li>group sessions</li>
-                 </ul>
-                 
-                 
+                 </ol>
             </div>
         </div>
         <div class="columns">
             <div class="column is-8 is-offset-2">
                 <br>
-                <h2 class="subtitle"><u>General Procedure</u></h2>
+                <h2 class="subtitle">General Procedure</h2>
                 <br>
                 <div class="tabs is-toggle is-fullwidth">
                     <ul>
-                        <li class="tab is-active" onclick="openTab(event, 'ind_skill')">
+                        <li id="ind_skill_tab" class="tab is-active" onclick="openTab(event, 'ind_skill')">
                             <a href="">
                                 <span class="icon is-small">
                                     <i class="far fa-user" aria-hidden="true"></i>
@@ -442,7 +371,7 @@
                                 <span>Individuals</span>
                             </a>
                         </li>
-                        <li class="tab" onclick="openTab(event, 'inst_skill')">
+                        <li id="inst_skill_tab" class="tab" onclick="openTab(event, 'inst_skill')">
                             <a href="">
                                 <span class="icon is-small">
                                     <i class="fas fa-university" aria-hidden="true"></i>
@@ -470,20 +399,20 @@
                     <p>After the workshop, we will have feedback and follow-up sessions.</p>
                 </div>
             </div>
-
-
-
+            </div>
              </div>
-             <div id="communication"></div>
+
+
+             <div id="communication">
              <br>
              <br>
              <!--COMM SKILLS-->
-                 <div class="columns" data-aos="fade-up">
+                 <div class="columns" >
                  <div class="column is-8 is-offset-2">
-                 <h1 class="title">
+                 <h1 class="title has-text-centered">
                      Communication Skills
                  </h1>
-                 <h2 class="subtitle">
+                 <h2 class="subtitle has-text-centered">
                      Communication is key! 
                  </h2>
                  <br>
@@ -492,54 +421,44 @@
                  <p>Be it any career or path you pursue, communication skills have become extremely important these days. Communication not only displays your ability to converse with people but also for selling. Modes of communication, be they spoken or written, have evolved and increased considerably in number along with the technological advancement of humankind. With forms of communication transforming rapidly in our fast-paced world, it's essential to be equipped with the latest communication styles. Whether in a job interview or a casual conversation, it is your communication skills that create the first impression.
                     </p>
                     <br>
-
-                <h2 class="subtitle"><u>What We Offer</u></h2>
-                 <p>Elucidation Today is committed to help you understand current methods of connecting and communicating with people around us. We specialize in skills that are necessary in professional setups, particularly formal modes of communication, both spoken and written forms which will be of incredibly helpful and a handy when you enter the corporate world. For example:
-                    </p>
-                 <!-- <ul>
-                     <li>Public Speaking</li>
-                     <li>Professional Email Writing</li>
-                     <li>Mastering Body Language</li>
-                     <li>Negotiating across Situations</li>
-                     <li>Giving and Receiving Feedback</li>
-                     <li>Communication for Introverts</li>
-                     <li>Cognitive Biases involved in communication</li>
-                     <li>Effective Communication via Video Conferencing</li>
-                     
-                 </ul> -->
-                 <div data-aos="fade-up" data-aos-duration="1000">
-					<figure class="image service-image">
-                        <picture>
-                          <source type="image/webp" srcset="static/webp_images/services/Picture25.webp">
-                          <source type="image/png" srcset="static/images/services/Picture25.png">
-                          <img src="static/images/services/Picture25.png">
-                        </picture>
-					</figure>
+                 <div class="services-image-container">
+                     <div>
+                        <h2 class="subtitle">What We Offer</h2>
+                         <p>Elucidation Today is committed to help you understand current methods of connecting and communicating with people around us. We specialize in skills that are necessary in professional setups, particularly formal modes of communication, both spoken and written forms which will be of incredibly helpful and a handy when you enter the corporate world. For example:
+                            </p>
+                     </div>
+                     <div>
+    					<figure class="image service-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture25.webp">
+                              <source type="image/png" srcset="static/images/services/Picture25.png">
+                              <img src="static/images/services/Picture25.png">
+                            </picture>
+    					</figure>
+                     </div>
                  </div>
                  <br>
                  
                  <p>For each of these skills, you can join</p>
-                 <ul>
+                 <ol>
                      <li>webinars</li>
                      <li>workshops</li>
                      <li>one-on-one sessions</li>
                      <li>group sessions</li>
-                 </ul>
+                 </ol>
                  <br> 
                  <h2 class="subtitle">Why should you choose <b>Elucidation Today</b>?</h2>
                  <p>We understand the importance of communication skills at every stage of education and career. Our modules for Communication Skills are based on up-to-date research. They are designed based on your age group and present level of communication. We provide personalized guidance on improving communication skills. In addition, we have mock sessions where you actually address an audience. Become a star presenter with us!</p>
-                 
-                 
             </div>
         </div>
         <div class="columns">
             <div class="column is-8 is-offset-2">
                 <br>
-                <h2 class="subtitle"><u>Procedure</u></h2>
+                <h2 class="subtitle">Procedure</h2>
                 <br>
                 <div class="tabs is-toggle is-fullwidth">
                     <ul>
-                        <li class="tab is-active" onclick="openTab(event, 'ind_comm')">
+                        <li id="ind_comm_tab" class="tab is-active" onclick="openTab(event, 'ind_comm')">
                             <a href="">
                                 <span class="icon is-small">
                                     <i class="far fa-user" aria-hidden="true"></i>
@@ -547,7 +466,7 @@
                                 <span>Individuals</span>
                             </a>
                         </li>
-                        <li class="tab" onclick="openTab(event, 'inst_comm')">
+                        <li id="inst_comm_tab" class="tab" onclick="openTab(event, 'inst_comm')">
                             <a href="">
                                 <span class="icon is-small">
                                     <i class="fas fa-university" aria-hidden="true"></i>
@@ -575,71 +494,54 @@
                     <p>After the workshop, we will have feedback and follow-up sessions.</p>
                 </div>
             </div>
-
-
-
-             </div>
+            </div>
+            </div>
              <!--résumé BUILDING-->
-             <div id="resume"></div>
+             <div id="resume">
              <br>
              <br>
-             <div class="columns" data-aos="fade-up">
+             <div class="columns" >
                  <div class="column is-8 is-offset-2">
-                 <h1 class="title">
+                 <h1 class="title has-text-centered">
                      Résumé Building
                  </h1>
-                 <h2 class="subtitle">
+                 <h2 class="subtitle has-text-centered">
                      A perfect résumé unlocks the best opportunities.
                  </h2>
                  <br>
                  <h2 class="subtitle">Why is résumé-building important?</h2>
                  <p>A resume is the representation of all your skills, achievements, accolades and academics. It is important to make your resume concise, precise and attractive so that it stands out. We here at Elucidation Today teach and inculcate the skill of resume building which will help them in their line of employment. We are here to help your resume create the best first impression possible.
                     </p><br>
-
-                 <h2 class="subtitle"><u>What We Offer</u></h2>
-                 <p>Elucidation Today addresses the needs of both students and working professionals in helping build a strong résumé. We aim to eliminate the confusion, stress, and worry behind the process of building your résumé and provide easy and stress-free solutions through
-                    </p>
-                 <!-- <ul>
-                     <li>research</li>
-                     <li>advice from recruiters</li>
-                     <li>customising your resume for different jobs and sectors</li>
-                     <li>revision of your current resume</li>
-                     <li>feedback</li>
-                 </ul>
-                 <br>   
-
-                 <p>We provide</p>
-                 <ul>
-                     <li>webinars</li>
-                     <li>workshops</li>
-                     <li>one-on-one sessions</li>
-                     <li>group sessions</li>
-                 </ul> -->
-                 <div data-aos="fade-up" data-aos-duration="1000">
-					<figure class="image service-image">
-                        <picture>
-                          <source type="image/webp" srcset="static/webp_images/services/Picture5.webp">
-                          <source type="image/png" srcset="static/images/services/Picture5.png">
-                          <img src="static/images/services/Picture5.png">
-                        </picture>
-					</figure>
+                 <div class="services-image-container">
+                     <div>
+                         <h2 class="subtitle">What We Offer</h2>
+                         <p>Elucidation Today addresses the needs of both students and working professionals in helping build a strong résumé. We aim to eliminate the confusion, stress, and worry behind the process of building your résumé and provide easy and stress-free solutions through
+                            </p>
+                     </div>
+                     <div>
+    					<figure class="image service-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture5.webp">
+                              <source type="image/png" srcset="static/images/services/Picture5.png">
+                              <img src="static/images/services/Picture5.png">
+                            </picture>
+    					</figure>
+                     </div>
                  </div>
                  <br> 
                  <h2 class="subtitle">Why should you choose <b>Elucidation Today</b>?</h2>
                  <p>We believe in providing a helping hand to all those who wish to enter the professional work setup. We understand the problems faced while creating a résumé and aim to provide you with a set of guidelines that simplify the process, bring clarity to your muddled thoughts and aid you in building an impressive résumé.
                 </p>
-
-
              </div>
          </div>
             <div class="columns">
             <div class="column is-8 is-offset-2">
                 <br>
-                <h2 class="subtitle"><u>Procedure</u></h2>
+                <h2 class="subtitle">Procedure</h2>
                 <br>
                 <div class="tabs is-toggle is-fullwidth">
                     <ul>
-                        <li class="tab is-active" onclick="openTab(event, 'ind_resume')">
+                        <li id="ind_resume_tab" class="tab is-active" onclick="openTab(event, 'ind_resume')">
                             <a href="">
                                 <span class="icon is-small">
                                     <i class="far fa-user" aria-hidden="true"></i>
@@ -647,7 +549,7 @@
                                 <span>Individuals</span>
                             </a>
                         </li>
-                        <li class="tab" onclick="openTab(event, 'inst_resume')">
+                        <li id="inst_resume_tab" class="tab" onclick="openTab(event, 'inst_resume')">
                             <a href="">
                                 <span class="icon is-small">
                                     <i class="fas fa-university" aria-hidden="true"></i>
@@ -675,68 +577,64 @@
                     <p>After the workshop, we will have feedback and follow-up sessions.</p>
                 </div>
             </div>
-        </div>
+        </div></div>
         <!--IT-->
-            <div id="it"></div>
+            <div id="it">
             <br>
             <br>
-             <div class="columns" data-aos="fade-up">
+             <div class="columns" >
                  <div class="column is-8 is-offset-2">
-                 <h1 class="title">
+                 <h1 class="title has-text-centered">
                      Information Technology
                  </h1>
-                 <h2 class="subtitle">
+                 <h2 class="subtitle has-text-centered">
                      A fundamental need of the century.
                  </h2>
                  <br>
                  <h2 class="subtitle">Why are IT skills relevant?</h2>
                  <p>It has become impossible to imagine scaling up business without the involvement of Information Technology. Growing tremendously, the IT sector has a lot to offer to almost all professional fields. The work environment across the globe has become heavily dependent on this sector. In this scenario it is important for us to incorporate ourselves with the necessary IT skills, Elucidation Today helps you with that.
-
                     </p><br>
-
-                 <h2 class="subtitle"><u>What We Offer</u></h2>
-                 <p>We offer training in a wide range of basic to advanced IT skills. If you run a venture and do not know what to look for in the right IT recruit, we help you in the hiring process. You can learn anything from basic MS-Office to advanced Python with us!
-                    </p>
-               
-                 <br>
-                 <div data-aos="fade-up" data-aos-duration="1000">
-					<figure class="image service-image large-image">
-                        <picture>
-                          <source type="image/webp" srcset="static/webp_images/services/Picture6.webp">
-                          <source type="image/png" srcset="static/images/services/Picture6.png">
-                          <img src="static/images/services/Picture6.png">
-                        </picture>
-					</figure>
+                 <div class="services-image-container">
+                     <div>
+                         <h2 class="subtitle">What We Offer</h2>
+                         <p>We offer training in a wide range of basic to advanced IT skills. If you run a venture and do not know what to look for in the right IT recruit, we help you in the hiring process. You can learn anything from basic MS-Office to advanced Python with us!
+                            </p>
+                    </div>
+                     <div>
+    					<figure class="image service-image large-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture6.webp">
+                              <source type="image/png" srcset="static/images/services/Picture6.png">
+                              <img src="static/images/services/Picture6.png">
+                            </picture>
+    					</figure>
+                     </div>
                  </div>
-                 <br>   
-
+                 <br>
                  <p>To be equipped with IT skills, you can join</p>
-                 <ul>
+                 <ol>
                      <li>webinars</li>
                      <li>workshops</li>
                      <li>one-on-one sessions</li>
                      <li>group sessions</li>
-                 </ul>
+                 </ol>
                  <br> 
                  <h2 class="subtitle">Why should you choose <b>Elucidation Today</b>?</h2>
                  <ul>
                      <li>We have a team of IT experts with experience working in startups as well as renowned corporations.</li>
                      <li>Our IT programs help you gain relevant skills to excel in your career.</li>
                      <li>We offer help in starting or progressing an IT venture.</li>
-                     
                  </ul>
-
-
              </div>
          </div>
             <div class="columns">
             <div class="column is-8 is-offset-2">
                 <br>
-                <h2 class="subtitle"><u>Procedure</u></h2>
+                <h2 class="subtitle">Procedure</h2>
                 <br>
                 <div class="tabs is-toggle is-fullwidth">
                     <ul>
-                        <li class="tab is-active" onclick="openTab(event, 'ind_it')">
+                        <li id="ind_it_tab" class="tab is-active" onclick="openTab(event, 'ind_it')">
                             <a href="">
                                 <span class="icon is-small">
                                     <i class="far fa-user" aria-hidden="true"></i>
@@ -744,7 +642,7 @@
                                 <span>Individuals</span>
                             </a>
                         </li>
-                        <li class="tab" onclick="openTab(event, 'inst_it')">
+                        <li id="inst_it_tab" class="tab" onclick="openTab(event, 'inst_it')">
                             <a href="">
                                 <span class="icon is-small">
                                     <i class="fas fa-university" aria-hidden="true"></i>
@@ -772,52 +670,43 @@
                     <p>After the workshop, we will have feedback and follow-up sessions.</p>
                 </div>
             </div>
-        </div>
-        <div id="psdt"></div>
+        </div></div>
+
+        <div id="psdt">
         <br>
         <br>
         <!--Problem Solving-->
-         <div class="columns" data-aos="fade-up">
+         <div class="columns" >
                  <div class="column is-8 is-offset-2">
-                 <h1 class="title">
+                 <h1 class="title has-text-centered">
                      Problem Solving and Design Thinking
                  </h1>
-                 <h2 class="subtitle">
+                 <h2 class="subtitle has-text-centered">
                      The secret to innovation.
                  </h2>
                  <br>
                  <h2 class="subtitle">Why is problem-solving and design thinking relevant?</h2>
                  <p>Problem-Solving has remained relevant throughout the history of humankind, leading to significant reforms in work and ways of living. Design Thinking is a problem-solving protocol emphasizing on the consumer, questioning assumptions and redefining problems to achieve beneficial innovations. It has become very important in building products and in problem-solving for users in recent times.<br>
-
                 An amalgamation of logic and creativity, Problem Solving & Design Thinking is emerging as one of the prerequisites for stepping into the corporate world, with top companies adopting it as part of their strategies and hiring process. With this in mind, universities across the globe have rolled out courses in itto prepare generations to come. 
-
                     </p><br>
-
-                 <h2 class="subtitle"><u>What We Offer</u></h2>
+                 <h2 class="subtitle">What We Offer</h2>
                  <p>When it comes to changing perceptions and imparting problem-solving skills at any workplace, <strong>Elucidation Today</strong> is a one-stop solution. We prefer providing an understanding of the problem-solving and design thinking framework right at the school or college level, moulding individuals well before they join the professional world. 
-
                 We conduct problem-solving workshops at schools and colleges by introducing the concept of design thinking through group activities. The group activities are designed to demonstrate the processes of addressing problems that are visible in our surroundings, redefining them and brainstorming possible solutions or alternatives. Throughout the process, students are guided by mentors from the Elucidation Today team.
-
-
                     </p>
-               
-                 <br>   
-
-                
+                 <br>
                  <h2 class="subtitle">Why should you choose <b>Elucidation Today</b>?</h2>
                  <p>Elucidation Today addresses the need for awareness around Problem Solving & Design Thinking in India, and wishes to impart its expertise on these skills so as to instill a sense of innovation in the youth of our country. We aim to change perceptions around problem-solving methods to help them function efficiently in their field and lead them to achieve greater heights. </p>
                  <br>
-                 <h2 class="subtitle"><u>Procedure</u></h2>
+                 <h2 class="subtitle">Procedure</h2>
                  <p><a href="index#contact">Contact us</a> to host a workshop at your institution.</p>
-
-
              </div>
-         </div>
-         <div id="mentor"></div>
+         </div></div>
+
+         <div id="mentor">
          <br>
          <br>
          <!--MENTORING-->
-         <div class="columns" data-aos="fade-up">
+         <div class="columns" >
                  <div class="column is-8 is-offset-2">
                  <h1 class="title has-text-centered">
                      Mentoring Sessions
@@ -829,37 +718,38 @@
 
                   </p>
                   <br>
-                  <h2 class="subtitle"><u>What We Offer</u></h2>
-                  <p>We offer you a range of mentors who are experts in their fields. Our mentors are passionate about helping students and can guide you through dilemmas. They have mentored several students and professionals before and are therefore experienced in what they do. We match you with a mentor who can best answer your queries and connect you with them.</p>
+                  <div class="services-image-container">
+                    <div>
+                        <h2 class="subtitle">What We Offer</h2>
+                        <p>We offer you a range of mentors who are experts in their fields. Our mentors are passionate about helping students and can guide you through dilemmas. They have mentored several students and professionals before and are therefore experienced in what they do. We match you with a mentor who can best answer your queries and connect you with them.</p>
+                    </div>
+                      <div>
+    					<figure class="image service-image large-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture8.webp">
+                              <source type="image/png" srcset="static/images/services/Picture8.png">
+                              <img src="static/images/services/Picture8.png">
+                            </picture>
+    					</figure>
+                     </div>
+                  </div>
                   <br>
-                  <div data-aos="fade-up" data-aos-duration="1000">
-					<figure class="image service-image large-image">
-                        <picture>
-                          <source type="image/webp" srcset="static/webp_images/services/Picture8.webp">
-                          <source type="image/png" srcset="static/images/services/Picture8.png">
-                          <img src="static/images/services/Picture8.png">
-                        </picture>
-					</figure>
-                 </div>
-                  <br>
-
                   <h2 class="subtitle">Why should you choose <b>Elucidation Today</b>?</h2>
-                <ul>
-                    <li>Our mentors don’t tell you what you must do, but help you weigh the pros and cons so you can make an informed decision.</li>
-                    <li>our mentors come from all walks of life.</li>
-                    <li>They are not equivalent to career counsellors.</li>
-                </ul>
-                
+                    <ul>
+                        <li>Our mentors don’t tell you what you must do, but help you weigh the pros and cons so you can make an informed decision.</li>
+                        <li>our mentors come from all walks of life.</li>
+                        <li>They are not equivalent to career counsellors.</li>
+                    </ul>                
                 </div>
          </div>
           <div class="columns">
             <div class="column is-8 is-offset-2">
                 <br>
-                <h2 class="subtitle"><u>Procedure</u></h2>
+                <h2 class="subtitle">Procedure</h2>
                 <br>
                 <div class="tabs is-toggle is-fullwidth">
                     <ul>
-                        <li class="tab is-active" onclick="openTab(event, 'ind_mentor')">
+                        <li id="ind_mentor_tab" class="tab is-active" onclick="openTab(event, 'ind_mentor')">
                             <a href="">
                                 <span class="icon is-small">
                                     <i class="far fa-user" aria-hidden="true"></i>
@@ -867,7 +757,7 @@
                                 <span>Individuals</span>
                             </a>
                         </li>
-                        <li class="tab" onclick="openTab(event, 'inst_mentor')">
+                        <li id="inst_mentor_tab" class="tab" onclick="openTab(event, 'inst_mentor')">
                             <a href="">
                                 <span class="icon is-small">
                                     <i class="fas fa-university" aria-hidden="true"></i>
@@ -895,12 +785,13 @@
                     <p>After the workshop, we will have feedback and follow-up sessions.</p>
                 </div>
             </div>
-        </div>
-        <div id="startup"></div>
+        </div></div>
+
+        <div id="startup">
         <br>
         <br>
         <!--STARTUP GUIDANCE-->
-        <div class="columns" data-aos="fade-up">
+        <div class="columns" >
                  <div class="column is-8 is-offset-2">
                  <h1 class="title has-text-centered">
                      Startup Guidance
@@ -909,36 +800,40 @@
                  <h2 class="subtitle">Why is startup guidance relevant?</h2>
                   <p>
                       Starting your own venture has become quite easy. It is becoming a more appropriate choice than trying to be hired in an over-competitive job market. Why work for someone else when you can work for yourself? On identifying problems or obstacles present in their surroundings, people are often motivated to initiate change on their own. Ideating and launching a start-up might seem pretty daunting with numerous intricate processes involved. Startup guidance thus becomes necessary.
-
                   </p><br>
-                  <h2 class="subtitle"><u>What We Offer</u></h2>
-                  <p>Without adequate knowledge, people sometimes end up at various dead-ends before even launching their start-up. This is exactly what we don’t want you to face. We provide</p>
-                  <br>
-                  <div data-aos="fade-up" data-aos-duration="1000">
-					<figure class="image service-image large-image">
-                        <picture>
-                          <source type="image/webp" srcset="static/webp_images/services/Picture9.webp">
-                          <source type="image/png" srcset="static/images/services/Picture9.png">
-                          <img src="static/images/services/Picture9.png">
-                        </picture>
-					</figure>
+                  <div class="services-image-container">
+                      <div>
+                          <h2 class="subtitle">What We Offer</h2>
+                          <p>Without adequate knowledge, people sometimes end up at various dead-ends before even launching their start-up. This is exactly what we don’t want you to face. We provide</p>
+                          <br>
+                      </div>
+                      <div>
+    					<figure class="image service-image large-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture9.webp">
+                              <source type="image/png" srcset="static/images/services/Picture9.png">
+                              <img src="static/images/services/Picture9.png">
+                            </picture>
+    					</figure>
+                     </div>
                  </div>
                  <br>
-                  <ul>
-                    <li>guidance through each and every process (ideation, user research, competitive edge, revenue model, hiring, branding)</li>
-                    <li>connections with CAs, lawyers, analysts, consultants, and HRs</li>
-                    <li>sustainability, profitability and feasibility checks for your startup idea</li>
-                </ul>
+                  <ol>
+                    <li>Guidance through each and every process (ideation, user research, competitive edge, revenue model, hiring, branding)</li>
+                    <li>Connections with CAs, lawyers, analysts, consultants, and HRs</li>
+                    <li>Sustainability, profitability and feasibility checks for your startup idea</li>
+                </ol>
                 <br>
                 <h2 class="subtitle">Why should you choose <b>Elucidation Today</b>?</h2>
                 <p>We offer a range of services aimed at leading you throughout the process of building your start-up. We believe in converting ideas into reality and help you execute them with ease. We provide long-term support and connect you with industry experts. With our huge network, we provide you the support of mentors whom you can reach at every stage.</p>
                 </div>
-        </div>
-        <div id="faculty"></div>
+        </div></div>
+
+        <div id="faculty">
         <br>
         <br>
         <!--FACULTY TRAINING-->
-        <div class="columns" data-aos="fade-up">
+        <div class="columns" >
                  <div class="column is-8 is-offset-2">
                  <h1 class="title has-text-centered">
                      Faculty Training
@@ -947,47 +842,40 @@
                  <h2 class="subtitle">Why are faculty training programmes important?</h2>
                   <p>
                       In today’s digital age, generation gaps have widened and become more evident, with massive technological changes being brought about almost every year. It is important to adapt to these changes have adequate knowledge and skills to connect to the coming generations with their ever-changing fast-paced lifestyles. Faculty at various educational institutions often face issues with communicating with students. We, at Elucidation Today aim to make you confident in your approach toward your students and help you build strong connections with them by providing necessary faculty training with the help of industrial experts. Helping you adapt to these changes now and in the future is our priority.
-
                   </p><br>
-                  <h2 class="subtitle"><u>What We Offer</u></h2>
-                  <p>In our training programmes, we cover:</p>
-                  
-                  <!-- <ul>
-                    <li>communication skills</li>
-                    <li>evaluation of student performance</li>
-                    <li>providing holistic education to students</li>
-                    <li>enhancing student interest in the subject</li>
-                </ul> -->
-                <div data-aos="fade-up" data-aos-duration="1000">
-					<figure class="image service-image">
-                        <picture>
-                          <source type="image/webp" srcset="static/webp_images/services/Picture16.webp">
-                          <source type="image/png" srcset="static/images/services/Picture16.png">
-                          <img src="static/images/services/Picture16.png">
-                        </picture>
-					</figure>
-                 </div>
-                <!-- <p>Our offerings are backed by research from sources such as Harvard. We work in congruence with the New Education Policy 2020.</p> -->
+                <div class="services-image-container">
+                    <div>
+                      <h2 class="subtitle">What We Offer</h2>
+                      <p>In our training programmes, we cover:</p>
+                    </div>
+                    <div>
+    					<figure class="image service-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture16.webp">
+                              <source type="image/png" srcset="static/images/services/Picture16.png">
+                              <img src="static/images/services/Picture16.png">
+                            </picture>
+    					</figure>
+                    </div>
+                </div>
                 <br>
                 <h2 class="subtitle">Why should you choose <b>Elucidation Today</b>?</h2>
                 <p>Elucidation Today propounds improved methods of education. We empathise with you and provide custom training programmes to help you learn useful techniques, from grasping your students’ attention to effectively imparting knowledge or skills. Having the required expertise and being up-to-date with all the latest opportunities to build connections with students, we only ensure quality training programmes which will help you throughout your professional life. What’s more, our solutions are based on students' insights and feedback! We keep in mind the New Education Policy during these programmes.</p>
                 </div>
         </div>
-
-
-
+        </div>
+        </div>
     </div>
     </section>
-
-    
-                
-              
-   
-
-
-   
-
-    <footer class="footer has-background-dark" data-aos="fade-in">
+    <div class="OpenImage" id="OpenImageId">
+        <div class="CloseImage" onclick="closeImage()">
+            &times;
+        </div>
+        <div class="OpenImageContainer">
+            <img src="" alt="" id="OpenImageTagId">
+        </div>
+    </div>
+    <footer class="footer has-background-dark">
         <div class="columns is-vcentered">
             <div class="column is-4 is-offset-4 has-text-centered">
                 
@@ -1015,31 +903,27 @@
     <a id="go-to-top"></a>
   </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script-->
+    <!--script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script-->
     <script type="text/javascript" src="static/js/elucidation.js"></script>
 
 
-<script>
+<!--script>
     AOS.init();
-</script>
+</script-->
 <script>
      function openTab(event, tabName)
      {
         event.preventDefault();
-        var i, x, tablinks;
-        x=document.getElementsByClassName('content-tab');
-        for ( i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        if(tabName.includes("ind_")){
+            document.getElementById("inst_"+tabName.split("_")[1]+"_tab").className = document.getElementById("inst_"+tabName.split("_")[1]+"_tab").className.replace(" is-active","");
+            document.getElementById("inst_"+tabName.split("_")[1]).style.display = "none";
+        }else{
+            document.getElementById("ind_"+tabName.split("_")[1]+"_tab").className = document.getElementById("ind_"+tabName.split("_")[1]+"_tab").className.replace(" is-active","");
+            document.getElementById("ind_"+tabName.split("_")[1]).style.display = "none";
         }
-        tablinks = document.getElementsByClassName('tab');
-        for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" is-active", "");
-         }
-
         document.getElementById(tabName).style.display = "block";
         event.currentTarget.className += " is-active"; 
-
      }
 
     $(document).ready(function() {
@@ -1070,5 +954,56 @@
             nav.classList.toggle('is-active' );
         });
       })();
+</script>
+<script type="text/javascript">
+function onclickHandler(props) {
+    document.getElementById("OpenImageId").style.display = "block";
+    document.getElementById("OpenImageTagId").src = props.target.srcset || props.target.src;
+}
+function closeImage(){
+    console.log('HEY');
+    document.getElementById("OpenImageId").style.display = "none";
+}
+window.onload=function() {
+  var Tags=document.getElementsByTagName('figure');
+  for (var i=Tags.length-1; i>=0; i--) {
+    if(Tags[i].onclick) {
+      var oldOnClick = Tags[i].onclick;
+      Tags[i].onclick = function() {
+        onclickHandler.call(this);
+        oldOnClick.call(this);
+      }
+    } else {
+      Tags[i].onclick = onclickHandler;
+    }
+  }
+}
+
+var listOfServices = ['career', 'skills', 'communication', 'resume', 'it', 'psdt', 'mentor', 'startup', 'faculty'];
+(function(){
+    for(let i=0; i<listOfServices.length; i++){
+        document.getElementById(listOfServices[i]).style.display = "none";
+    }
+    document.getElementById(listOfServices[0]).style.display = "block";
+})();
+function openService(service){
+    for(let i=0; i<listOfServices.length; i++){
+        document.getElementById(listOfServices[i]).style.display = "none";
+    }
+        document.getElementById(service).style.display = "block";
+}
+
+function toggleSideBar(){
+    const menuIcon = document.getElementById("menu-bar-icon");
+    const menuItems = document.getElementById("menu-bar-items");
+
+    if(menuIcon.classList.contains("Change")){
+        menuIcon.classList.remove("Change");
+        menuItems.style.width = "0";
+    }else{
+        menuIcon.classList.add("Change")
+        menuItems.style.width = "100%";
+    }
+}
 </script>
 </html>
