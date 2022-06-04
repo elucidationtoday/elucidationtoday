@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
 	<link rel="icon" href="static/images/logo_fav.png">
    
-    
+    <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
     <!--link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"-->
     <link rel="stylesheet" href="static/css/elucidation.css">
@@ -183,7 +183,6 @@
                 </button>
              </div>
              <div class="column is-offset-2" id="menu-bar-items">
->>>>>>> NewlyDesignedPages
                  <ul class="menu-list" id="services">
                     <li><a onclick="openService('career')">Career Guidance and Awareness</a></li>
                     <li><a onclick="openService('skills')">Skill Development</a>
@@ -875,30 +874,7 @@
             <img src="" alt="" id="OpenImageTagId">
         </div>
     </div>
-    <footer class="footer has-background-dark">
-        <div class="columns is-vcentered">
-            <div class="column is-4 is-offset-4 has-text-centered">
-                
-                <a class="social" href="https://www.instagram.com/elucidation_today/" alt="@elucidation_today">
-                    <span class="icon">
-                        <i class="fab fa-instagram fa-2x"></i>
-                    </span>
-                </a>
-                <a class="social" href="mailto:contact@elucidationtoday.com" alt="mailto:contact@elucidationtoday.com">
-                    <span class="icon">
-                        <i class="far fa-envelope fa-2x"></i>
-                    </span>
-                </a>
-                <a class="social" href="https://www.linkedin.com/company/elucidation-today" alt="linkedin">
-                    <span class="icon">
-                        <i class="fab fa-linkedin fa-2x"></i>
-                    </span>
-                </a>
-                
-                
-
-            </div>
-         </div>
+    <footer class="footer has-background-dark" id="socials">
     </footer>
     <a id="go-to-top"></a>
   </body>
@@ -954,6 +930,9 @@
             nav.classList.toggle('is-active' );
         });
       })();
+
+    $('#socials').load('footer.html');
+
 </script>
 <script type="text/javascript">
 function onclickHandler(props) {

@@ -1511,3 +1511,59 @@ Abhishek CSS
   display: block;
 }
 /* ABOUT */
+
+/* FOOTER */
+.contact-information{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #FDF7E8;
+}
+.contact-information a{
+  color: #FDF7E8;
+}
+/* tooltip */
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+/* FOOTER */
+
+
+@media (min-width: 768px){
+  .footer{
+    padding-bottom: 3rem;
+  }
+}
