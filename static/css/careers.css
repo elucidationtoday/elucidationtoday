@@ -56,12 +56,6 @@
 	color:white;
 	border-radius: 30px;
 }
-.hero{
-	padding-top: 50px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-}
 #first-pic{
 	max-height: 300px;
 	min-height: 200px;
@@ -214,12 +208,6 @@ and (max-device-width : 800px){
   	font-size: 13px;
   }
 }
-@media (max-width : 768px){
-  .hero{
-  	padding-top: 0;
-  }
-}
-
 
 
 /* tooltip */
