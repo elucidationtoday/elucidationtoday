@@ -200,7 +200,7 @@
 
   		.comm-subtitle { font-size: 1.2em; }
       .level-item h1{font-size: 1.75em; margin-right: 10px; }
-      #about .subtitle, #end .subtitle, #services li{font-size: 20px;}
+      #about .subtitle, #end .subtitle {font-size: 20px;}
       #about p, .comm p, #end p, {font-size: 18px;}
 
   		.achievements-text {color: #0B4F57 !important; }
@@ -223,7 +223,7 @@
 
   		:focus {border-color: #A38560 !important;}
 
-  		.intro .title, #career .title, #career .subtitle, #skills .title, #skills .subtitle, #mentor .title, #mentor .subtitle, #startup .title, #startup .subtitle, #faculty .title, #faculty .subtitle
+  		.intro .title
       {color: #0B4F57 !important;}
 
   		#submit { color: #FDF7E8; background-color: #AC753D; border: none; }
@@ -416,8 +416,10 @@ Abhishek CSS
   align-items: flex-start;
 }
 .all-services .subtitle{
-  font-weight: 700;
-  color: #0B4F57;
+  font-weight: 100;
+  color: #4a4a4a;
+  font-size: 14px;
+  margin-top: 20px !important;
 }
 .all-services .services-image-container{
   display: flex;
@@ -552,10 +554,9 @@ Abhishek CSS
 .service-image{
   margin-top: 1rem;
   margin-bottom: 1rem;
-  z-index: 100;
+  z-index: 10;
   -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0) scale(1.0, 1.0)
-  
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
 }
 .large-image{
   width: fit-content;

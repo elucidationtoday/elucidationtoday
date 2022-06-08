@@ -25,6 +25,28 @@
 .hero{
   padding-top: 0px;
 }
+.bottom-text{
+  margin-top: 20px;
+}
+.services-image-container ul{
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.menu-items-font li{
+  font-size: 14px;
+}
+.section.all-services > div:nth-child(1){
+  flex-basis: 0%;
+}
+.section.all-services > div:nth-child(2){
+  flex-basis: 70%;
+}
+.all-services .title{
+  color: #0B4F57;
+}
+.menu-list li ul{
+  border: 0;
+}
 @media (max-width: 768px){
   .fixed-button-services a > div{
     left: 2%;
