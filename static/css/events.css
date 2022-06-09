@@ -164,7 +164,24 @@
 	.event-item .events-details .column{
 		padding: 0 100px;
 	}
-
+	.all-events .events-sub-container{
+		display: block;
+	}
+	.all-events .events-title{
+		margin: 0;
+	}
+	.all-events .events-details{
+		margin: 0;
+	}
+	.event-item .events-details .desc-sub-points.highlights ul{
+		flex-wrap: wrap;
+	}
+	.event-item .events-details .desc-sub-points.highlights ul li div:nth-child(2){
+		text-align: left;
+	}
+	.event-item .events-details .desc-sub-points.highlights ul li{
+		border-right: 0;
+	}
 }
 @media only screen and (max-width: 500px){
 	.galleries .gallery-wrap{
