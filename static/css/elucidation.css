@@ -1290,9 +1290,9 @@ Abhishek CSS
 	}
   #snap-popup img{
     margin-top: 20px;
-    height: 80vh;
+    max-height: 80vh;
   }
-  #snap-popup .close{
+  #snap-popup .close, #featured-image-popup .close{
     color: #111;
     right: 20px;
   }
