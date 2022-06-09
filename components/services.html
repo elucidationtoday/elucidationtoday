@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+  <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176428633-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-176428633-1');
+	</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Services • Elucidation Today">
+    <meta name="keywords" content="elucidation today services, education startup, internship opportunity, employable">
+    <meta name="description" content="We organize skill development workshops for students in a range of things, to groom their personality and prepare them for their career. The workshops cover topics such as communication, resume building, IT skills, problem solving and design thinking.">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+	<link rel="icon" href="static/images/logo_fav.png">
+   
+    <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <!--link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="static/css/elucidation.css">
+    <link rel="stylesheet" href="static/css/services.css">
+    
+    <title>Services • Elucidation Today</title>
+  </head>
+  <body>
+    <div id="page_loader">
+    </div>
+
+    <nav class="navbar is-fixed-top is-transparent">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item logo" href="index">
+                    <picture>
+                      <source type="image/webp" srcset="static/webp_images/logo.webp">
+                      <source type="image/png" srcset="static/images/logo.png">
+                      <img src="static/images/logo.png" id="logo" onmouseover="hover(this, document.getElementById('logo_full'))">
+                    </picture>
+                    <picture>
+                      <source type="image/webp" srcset="static/webp_images/logo_full.webp">
+                      <source type="image/png" srcset="static/images/logo_full.png">
+                      <img src="static/images/logo_full.png" id="logo_full" onmouseout="unhover(document.getElementById('logo'), this)">
+                    </picture>
+                </a>
+                <span class="navbar-burger burger"data-target="navbarMenuHero">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div class="navbar-menu" id="navbarMenuHero">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="index">Elucidation Today</a>
+	  				<!--a class="navbar-item coderstodayLink" href="coderstoday/index">Coders Today</a-->
+                    <a class="navbar-item" href="about-us">About</a>
+                    <div class="navbar-item has-text-centered has-dropdown is-hoverable">
+                        <a class="navbar-link is-arrowless" href="services">Services</a>
+                        <div class="navbar-dropdown is-boxed is-right">
+                            <a class="services-link navbar-item" href="#career">Career Awareness</a>
+                            <a class="services-link navbar-item" href="#skills">Skill Development</a>
+                            <a class="services-link navbar-item" href="#mentor">Mentorship</a>
+                            <a class="services-link navbar-item" href="#startup">Startup Guidance</a>
+                            <a class="services-link navbar-item" href="#faculty">Faculty Training</a>
+                        </div>
+                    </div>
+                    <div class="navbar-item has-text-centered has-dropdown is-hoverable">
+                        <a class="navbar-link is-arrowless">More 
+                            <span class="icon is-small">
+                                <i class="fas fa-angle-down" id="more-link" aria-hidden="true"></i>
+                              </span>
+                        </a>
+                        <div class="navbar-dropdown is-boxed is-right">
+                            <a class="services-link navbar-item" href="blog">Blogs</a>
+                            <a class="services-link navbar-item" href="events">Events</a>
+                            <a class="services-link navbar-item" href="careers">Work With Us</a>
+                            <a class="services-link navbar-item" href="mentors">Mentors</a>
+                            <a class="services-link navbar-item " href="index#contact">Contact</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logo-mobile">
+            <a href="index">
+                <picture>
+                  <source type="image/webp" srcset="static/webp_images/logo.webp">
+                  <source type="image/png" srcset="static/images/logo.png">
+                  <img src="static/images/logo.png">
+                </picture>
+            </a>
+            </div>
+        </div>
+     </nav>
+    <div class="navigation-bar">
+      <div class="nav-row">
+        <a href="index"><div class="nav-column"><i class="fas fa-home"></i><div class="nav-text">Home</div></div></a>
+        <a href="about-us"><div class="nav-column"><i class="fas fa-info-circle"></i><div class="nav-text">About</div></div></a>
+        <a href="services"><div class="nav-column"><i class="fas fa-clipboard-list"></i><div class="nav-text">Services</div></div></a>
+        <a href="index#contact"><div class="nav-column"><i class="fas fa-phone"></i><div class="nav-text">Contact</div></div></a>
+        <div class="nav-column" onclick="openMobileMenu(this)">
+            <i class="fas fa-bars"></i><div class="nav-text">More</div>
+            <div class="mobile-menu">
+	            <!--a href="coderstoday/index">Coders Today</a-->
+                <a href="blog">Blogs</a>
+                <a href="events">Events</a>
+                <a href="careers">Work With Us</a>
+                <a href="mentors">Mentors</a>
+            </div>
+        </div>
+      </div>
+    </div>
+        <section class="hero comm" id="services-head">
+            <div class="hero-body has-text-centered">
+                <div class="container">
+                    <h1 class="title comm-title">
+                        Our Services
+                    </h1>
+                </div>
+            </div>
+            <div class="fixed-button-services">
+                <a href="book-a-session">
+                    <div class="button">Book a session</div>
+                </a>
+            </div>
+        </section>   
+        <section class="section is-main">
+        <div class="container" id="services-start">
+         <div class="columns is-vcentered">
+             <!--<div class="column is-narrow pl-5 pb-2" id="services">
+                 <aside class="menu">
+                    <p class="menu-label">
+                        <a>Career Awareness</a>
+                    </p>
+                    <ul class="menu-list">
+                        <li><a>Why Us</a></li>
+                        <li><a>Procedure</a></li>
+                    </ul>
+                    <p class="menu-label">
+                        <a>Skill Development</a>
+                    </p>
+                    
+                    <ul class="menu-list">
+                        <li><a href="">General Procedure</a></li>
+                        <li><a href="">Communication Skills</a></li>
+                        <li><a href="">résumé Building</a></li>
+                        <li><a href="">Information Technology</a></li>
+                        <li><a href="">Design Thinking</a></li>
+
+                    </ul>
+                    <p class="menu-label">
+                        <a>Mentorships</a>
+                    </p>
+                    <ul class="menu-list">
+                        <li><a>Why Us</a></li>
+                        <li><a>Procedure</a></li>
+                    </ul>
+                    <p class="menu-label">
+                        <a>Startup Guidance</a>
+                    </p>
+                    <p class="menu-label">
+                        <a>Faculty Training</a>
+                    </p>
+
+
+
+                </aside>
+             </div>-->
+             <div class="column is-offset-2"></div>
+            </div>  
+        </section>   
+        <section class="section is-main all-services">
+         <div class="columns is-vcentered menu-bar-items" id="menu-bar-flex">
+             <div class="MenuContainer" onclick="toggleSideBar()">
+                <button type="button" class="" id="menu-bar-icon">
+                    <div class="Bar1"></div>
+                    <div class="Bar2"></div>
+                    <div class="Bar3"></div>
+                </button>
+             </div>
+             <div class="column is-offset-2" id="menu-bar-items">
+                 <ul class="menu-list menu-items-font" id="services">
+                    <li><a onclick="openService('career')">Career</a>
+                        <ul class="menu-list">
+                            <li><a onclick="openService('career')">Career Coaching</a></li>
+                            <li><a onclick="openService('resume')">Résumé Building</a></li>
+                            <li><a onclick="openService('linkedin')">LinkedIn Profile Building</a></li>
+                            <li><a onclick="openService('mentoring')">Mentoring</a></li>
+                        </ul>
+                    </li>
+                    <li><a onclick="openService('content_writing')">Skills</a>
+                        <ul class="menu-list">
+                            <li><a onclick="openService('content_writing')">Content Writing</a></li>
+                            <li><a onclick="openService('business_communication')">Business Communication</a></li>
+                            <li><a onclick="openService('web_development')">Web Development</a></li>
+                            <li><a onclick="openService('business_tools')">Business Tools</a></li>
+                        </ul>
+                    </li>
+                    <li><a onclick="openService('financial_literacy')">Essentials</a>
+                        <ul class="menu-list">
+                            <li><a onclick="openService('financial_literacy')">Financial Literacy</a></li>
+                            <li><a onclick="openService('legal_literacy')">Legal Literacy</a></li>
+                            <li><a onclick="openService('sex_ed')">Sex Education</a></li>
+                        </ul>
+                    </li>
+                 </ul>
+             </div>
+             <!--div class="column illust">
+                <picture>
+                  <source type="image/webp" srcset="static/webp_images/analyse-bw.webp">
+                  <source type="image/png" srcset="static/images/analyse-bw.png">
+                  <img src="static/images/analyse-bw.png" width="85%" height="auto" alt="Services">
+                </picture>
+             </div-->
+         </div>
+         <div class="container">
+         <div id="career">
+         <br>
+         <br>
+         <div class="columns">
+             <div class="column is-8 is-offset-2">
+                 <h1 class="title has-text-centered">
+                     Career Coaching
+                 </h1>
+                 <h2 class="subtitle has-text-centered">
+                     An astonishing 93% of students were aware of only 7 career options. 86% of students are very concerned about choosing the right career and 92% hardly get any career guidance. <a href="http://bwpeople.businessworld.in/article/Little-Knowledge-And-Surplus-Opportunities-Silver-Lining-For-Career-Counselling-/13-05-2019-170439/#:~:text=an%20astonishing%2093%20percent%20of%20students%20were%20aware%20of%20only%207%20career%20options">Business World</a>
+                 </h2>
+                 <br>
+                 <h2 class="subtitle">What will you get?</h2>
+                 <p>
+                    <ul>
+                        <li>Insights into your personal definition of 'success'</li>
+                        <li>Selection of specific courses, institutions and companies</li>
+                        <li>Prospects for jobs, internships, freelancing, startup guidance </li>
+                        <li>Fellowship programs for holistic development and strong profile </li>
+                    </ul>
+                 </p>
+                 <br>
+                 <div class="services-image-container">
+                    <div>
+                     <h2 class="subtitle">Who can join?</h2>
+                     <p>
+                        <ul>
+                            <li>Any school/college student, working professional, or employment seeker</li>
+                            <li>Anyone who is bored of the traditional career counselors (add infographic)</li>
+                            <li>Anyone wanting to make informed career decisions</li>
+                            <li>A parent or guardian</li>
+                        </ul>
+                     </p>
+                    </div>
+                     <div>
+    					<figure class="image service-image">
+    						<picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture11.webp">
+                              <source type="image/png" srcset="static/images/services/Picture11.png">
+                              <img src="static/images/services/Picture11.png">
+                            </picture>
+    					</figure>
+    				 </div>
+                 </div>
+                 <br>
+                 <!--div class="services-image-container">
+                     <div>
+    					<figure class="image service-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture3.webp">
+                              <source type="image/png" srcset="static/images/services/Picture3.png">
+                              <img src="static/images/services/Picture3.png">
+                            </picture>
+    					</figure>
+                     </div>
+                     <div>
+                         <h2 class="subtitle">How do we do this?</h2>
+                         <p>We provide guidance and spread awareness through</p>
+                     </div>
+                 </div>
+                 <br-->
+                 <div class="services-image-container">
+                     <div  class="make-image-readable" >
+    					<figure class="image service-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture19.webp">
+                              <source type="image/png" srcset="static/images/services/Picture19.png">
+                              <img src="static/images/services/Picture19.png">
+                            </picture>
+    					</figure>
+                     </div>
+                     <div>
+                         <h2 class="subtitle">Why choose <b>Elucidation Today</b>?</h2>
+                         <p>
+                             <ul>
+                                 <li>We evaluate your aptitude as well as interest</li>
+                                 <li>Mentors and industry experts themselves guide you</li>
+                                 <li>We are not the traditional mechanical</li>
+                             </ul>
+                         </p>
+                     </div>
+                 </div>
+                 <div class="services-image-container">
+                    <p class="bottom-text">Are you tired of the never-ending research on figuring out your career? Go no further as we are your one-stop solution! <a href="book-a-session">Book a session.</a></p>
+                 </div>
+            </div>
+            </div>
+            </div>
+
+             <!--résumé BUILDING-->
+             <div id="resume">
+             <br>
+             <br>
+             <div class="columns" >
+                 <div class="column is-8 is-offset-2">
+                 <h1 class="title has-text-centered">
+                    Résumé Building
+                 </h1>
+                 <h2 class="subtitle has-text-centered">
+                    For each corporate job opening, there are 250 résumés received on an average out of which 4-6 get shortlisted for the interview. Glassdoor
+                 </h2>
+                 <br>
+                 <h2 class="subtitle">What will you learn?</h2>
+                    <p>
+                        <ul>
+                            <li>How to make your résumé concise, precise, and attractive</li>
+                            <li>Present your skills, achievements, and academics magnificently</li>
+                            <li>How to customize the résumé based on the organization and profile</li>
+                            <li>Platforms to attract recruiters and employers to your resume</li>
+                        </ul>
+                    </p><br>
+                 <div class="services-image-container">
+                     <div>
+                        <h2 class="subtitle">Who can sign up?</h2>
+                            <p>
+                                <ul>
+                                    <li>Students looking to enter the professional work setup</li>
+                                    <li>Employers wanting to become efficient in shortlisting résumé/CV</li>
+                                    <li>Professionals looking for better roles</li>
+                                    <li>Those who are fed up by constant résumé rejections</li>
+                                </ul>
+                            </p>
+                     </div>
+                     <div>
+    					<figure class="image service-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture5.webp">
+                              <source type="image/png" srcset="static/images/services/Picture5.png">
+                              <img src="static/images/services/Picture5.png">
+                            </picture>
+    					</figure>
+                     </div>
+                 </div>
+                 <br> 
+                 <h2 class="subtitle">Why choose <b>Elucidation Today</b>?</h2>
+                 <p>
+                    <ul>
+                        <li>Our mentors are none but the recruiters from top organizations</li>
+                        <li>We provide detailed feedback on each aspect of your résumé</li>
+                        <li>We customize your résumé for different jobs and sectors</li>
+                        <li>We charge only after providing the service</li>
+                    </ul>
+                </p>
+                 <div class="services-image-container">
+                    <p class="bottom-text">Let's begin with resume-building, shall we?<br>
+                                            <a href="book-a-session">Book a session!</a>
+                    </p>
+                </div>
+            </div>
+         </div>
+        </div>
+        <!--Linkedin profile-->
+             <div id="linkedin">
+             <br>
+             <br>
+             <div class="columns" >
+                 <div class="column is-8 is-offset-2">
+                 <h1 class="title has-text-centered">
+                    LinkedIn Profile Building
+                 </h1>
+                 <h2 class="subtitle has-text-centered">
+                    Job seekers with a comprehensive LinkedIn profile have a 71% higher chance of getting a job interview. Over 95% of the hiring professionals use LinkedIn to find candidates. <a href="https://www.resumego.net/linkedin-resume-writers/">ResumeGo</a>
+                 </h2>
+                 <br>
+                 <h2 class="subtitle">What will you learn?</h2>
+                    <p>
+                        <ul>
+                            <li>How to create an impressive profile on LinkedIn</li>
+                            <li>How to attract recruiters and entrepreneurs to your profile</li>
+                            <li>How to network with relevant individuals through LinkedIn</li>
+                            <li>How to keep yourself updated with latest industry trends</li>
+                        </ul>
+                    </p><br>
+                 <div class="services-image-container">
+                     <div>
+                        <h2 class="subtitle">Who can join?</h2>
+                            <p>
+                                <ul>
+                                    <li>Any student/entrepreneur/academician/professional/freelancer</li>
+                                    <li>Anyone who is looking for jobs or looking to provide jobs</li>
+                                    <li>Anyone who wants to build their profile for better job prospects</li>
+                                    <li>Anyone who is seeking to build great connections and expand their network</li>
+                                </ul>
+                            </p>
+                     </div>
+                     <div>
+                        <figure class="image service-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture5.webp">
+                              <source type="image/png" srcset="static/images/services/Picture5.png">
+                              <img src="static/images/services/Picture5.png">
+                            </picture>
+                        </figure>
+                     </div>
+                 </div>
+                 <br> 
+                 <h2 class="subtitle">Why choose <b>Elucidation Today</b>?</h2>
+                 <p>
+                    <ul>
+                        <li>Our mentors are professionals who have achieved targeted results on LinkedIn</li>
+                        <li>Our experts help you build your profile according to your specifications</li>
+                        <li>We help ease your job-seeking/recruiting process </li>
+                        <li>We not only cover what should be done, but also how it is to be done</li>
+                    </ul>
+                </p>
+                 <div class="services-image-container">
+                    <p class="bottom-text">Opportunities await you. Why waste time? <a href="book-a-session">Book a session.</a>
+                    </p>
+                </div>
+            </div>
+         </div>
+        </div>
+        <!--Mentoring-->
+             <div id="mentoring">
+             <br>
+             <br>
+             <div class="columns" >
+                 <div class="column is-8 is-offset-2">
+                 <h1 class="title has-text-centered">
+                    Mentoring
+                 </h1>
+                 <h2 class="subtitle has-text-centered">
+                    Know the destination but not the path? That’s what we are here for - to help you out.
+                    In a <a href="https://nationalmentoringday.org/about/">survey</a>, 76% of people think mentors are important, however, only 37% of people currently have one. In another <a href="https://www.forbes.com/sites/christinecomaford/2019/07/03/new-study-76-of-people-think-mentors-are-important-but-only-37-have-one/?sh=233ac2654329">survey</a>, 97% of those who have a mentor believe that their mentor has been valuable.
+                 </h2>
+                 <br>
+                 <h2 class="subtitle">What will you get?</h2>
+                    <p>
+                        <ul>
+                            <li>In-depth knowledge of the field you are interested in</li>
+                            <li>A sorted career path which is closer to your definition of 'success'</li>
+                            <li>Expanded network and guidance of experts </li>
+                            <li>Relevant skills and thorough knowledge to advance your career</li>
+                        </ul>
+                    </p><br>
+                 <div class="services-image-container">
+                     <div>
+                        <h2 class="subtitle">Who can join?</h2>
+                            <p>
+                                <ul>
+                                    <li>Anyone who knows the destination but not the path</li>
+                                    <li>Anyone who is confused about which career trajectory is worth it</li>
+                                    <li>Anyone looking for advice from an industry expert</li>
+                                    <li>Anyone who needs the support of a mentor</li>
+                                </ul>
+                            </p>
+                     </div>
+                     <div>
+                        <figure class="image service-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture5.webp">
+                              <source type="image/png" srcset="static/images/services/Picture5.png">
+                              <img src="static/images/services/Picture5.png">
+                            </picture>
+                        </figure>
+                     </div>
+                 </div>
+                 <br> 
+                 <h2 class="subtitle">Why choose <b>Elucidation Today</b>?</h2>
+                 <p>
+                    <ul>
+                        <li>We have a large pool of mentors who are experts in their fields</li>
+                        <li>Our mentors are passionate, experienced, and well-informed</li>
+                        <li>Instead of giving you a 'to-do' list, our mentors enable you to make informed decisions</li>
+                    </ul>
+                </p>
+                 <div class="services-image-container">
+                    <p class="bottom-text">Check out some of the mentors<br>
+                                            Having a mentor is like having your customized Google, just more trustable, approachable, and human!
+                                            <a href="book-a-session">Book my session</a>
+                    </p>
+                </div>
+            </div>
+         </div>
+        </div>
+
+
+        <!--Skills-->
+             <div id="content_writing">
+             <br>
+             <br>
+             <div class="columns" >
+                 <div class="column is-8 is-offset-2">
+                 <h1 class="title has-text-centered">
+                    Content Writing
+                 </h1>
+                 <h2 class="subtitle has-text-centered">
+                    Whether you are a Business Analyst or a Recruiter, a Research Associate or a Project Manager, writing is something you need to be good at. We’ve got this skill covered for you!
+                 </h2>
+                 <br>
+                 <h2 class="subtitle">What will you learn?</h2>
+                    <p>
+                        <ul>
+                            <li>Research methods, tools for writing, reader psychology</li>
+                            <li>Steps involved in writing, editing, proofreading and providing feedback</li>
+                            <li>Writing for websites, digital mediums, copywriting, email writing</li>
+                            <li>Portfolio building, basic SEO, and careers in content writing</li>
+                        </ul>
+                    </p><br>
+                 <div class="services-image-container">
+                     <div>
+                        <h2 class="subtitle">Who can join?</h2>
+                            <p>
+                                <ul>
+                                    <li>Anyone with basic knowledge of English language irrespective of their age</li>
+                                    <li>Any student or working professional as writing skills are required across industries</li>
+                                    <li>Anyone looking to monetize their content writing skills as a freelancer</li>
+                                    <li>Anyone who likes to write and wants to become better at it</li>
+                                </ul>
+                            </p>
+                     </div>
+                     <div>
+                        <figure class="image service-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture5.webp">
+                              <source type="image/png" srcset="static/images/services/Picture5.png">
+                              <img src="static/images/services/Picture5.png">
+                            </picture>
+                        </figure>
+                     </div>
+                 </div>
+                 <br> 
+                 <h2 class="subtitle">Why choose <b>Elucidation Today</b>?</h2>
+                 <p>
+                    <ul>
+                        <li>Live classes and personal doubt clearing sessions</li>
+                        <li>Mentors provide feedback on each write-up</li>
+                        <li>Build your portfolio and blogging website</li>
+                        <li>Small batch and interactive course</li>
+                    </ul>
+                </p>
+                 <div class="services-image-container">
+                    <p class="bottom-text">Write it right with us! <a href="book-a-session">Enroll now.</a>
+                    </p>
+                </div>
+            </div>
+         </div>
+        </div>
+
+
+
+        <!--Business comm-->
+             <div id="business_communication">
+             <br>
+             <br>
+             <div class="columns" >
+                 <div class="column is-8 is-offset-2">
+                 <h1 class="title has-text-centered">
+                    Business Communication
+                 </h1>
+                 <h2 class="subtitle has-text-centered">
+                    <a href="https://www.forbes.com/sites/carminegallo/2017/04/30/college-seniors-65-percent-of-recruiters-say-this-one-skill-is-more-important-than-your-major/?sh=405cea7e757c">65% of the recruiters and hiring managers</a> believe that communication skills are more important than even the college major.
+                 </h2>
+                 <br>
+                 <h2 class="subtitle">What will you learn?</h2>
+                    <p>
+                        <ul>
+                            <li>Public speaking and mastering body language</li>
+                            <li>Pitching and negotiating using communication biases</li>
+                            <li>Professional email writing and writing cold emails </li>
+                            <li>Providing and receiving feedback</li>
+                        </ul>
+                    </p><br>
+                 <div class="services-image-container">
+                     <div>
+                        <h2 class="subtitle">Who can join?</h2>
+                            <p>
+                                <ul>
+                                    <li>Anyone wanting to make awesome first impressions</li>
+                                    <li>Anyone wanting to walk in confident for an interview</li>
+                                    <li>Anyone looking to reach maximum potential at any stage of their career</li>
+                                    <li>If you've learnt how to talk, you're eligible</li>
+                                </ul>
+                            </p>
+                     </div>
+                     <div>
+                        <figure class="image service-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture5.webp">
+                              <source type="image/png" srcset="static/images/services/Picture5.png">
+                              <img src="static/images/services/Picture5.png">
+                            </picture>
+                        </figure>
+                     </div>
+                 </div>
+                 <br> 
+                 <h2 class="subtitle">Why choose <b>Elucidation Today</b>?</h2>
+                 <p>
+                    <ul>
+                        <li>We focus on verbal as well as non-verbal communication</li>
+                        <li>We cover oral as well as written communication</li>
+                        <li>We customize it as per your current level of communication</li>
+                        <li>We make you face the audience and gain confidence through practice</li>
+                    </ul>
+                </p>
+                <div class="services-image-container">
+                    <p class="bottom-text">If your communication skills let you down, you are at the right place to improve. <a href="book-a-session">Sign up here.</a>
+                    </p>
+                </div>
+            </div>
+         </div>
+        </div>
+
+
+
+        <!--Web Dev-->
+             <div id="web_development">
+             <br>
+             <br>
+             <div class="columns" >
+                 <div class="column is-8 is-offset-2">
+                 <h1 class="title has-text-centered">
+                    Web Development
+                 </h1>
+                 <h2 class="subtitle has-text-centered">
+                    
+                 </h2>
+                 <br>
+                 <h2 class="subtitle">What will you learn?</h2>
+                    <p>
+                        <ul>
+                            <li>How to make a complete website from scratch</li>
+                            <li>HTML, CSS and Javascript</li>
+                            <li>React JS and Firebase</li>
+                            <li>Git: a blend of theory and hands-on practice</li>
+                        </ul>
+                    </p><br>
+                 <div class="services-image-container">
+                     <div>
+                        <h2 class="subtitle">Who can join?</h2>
+                            <p>
+                                <ul>
+                                    <li>Anyone passionate in this field from any age group</li>
+                                    <li>An individual with no prior knowledge</li>
+                                    <li>An individual with beginner to intermediate knowledge  </li>
+                                    <li>Anyone interested to take up web development as a freelancer</li>
+                                </ul>
+                            </p>
+                     </div>
+                     <div>
+                        <figure class="image service-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture5.webp">
+                              <source type="image/png" srcset="static/images/services/Picture5.png">
+                              <img src="static/images/services/Picture5.png">
+                            </picture>
+                        </figure>
+                     </div>
+                 </div>
+                 <br> 
+                 <h2 class="subtitle">Why choose <b>Elucidation Today</b>?</h2>
+                 <p>
+                    <ul>
+                        <li>Our experts have experience with international IT projects</li>
+                        <li>Limited seats = More attention</li>
+                        <li>We assist you in building your portfolio </li>
+                        <li>We help you get your first project</li>
+                    </ul>
+                </p>
+                 <div class="services-image-container">
+                    <p class="bottom-text">Gain the most trending skill. <a href="book-a-session">Enroll now!</a>
+                    </p>
+                </div>
+            </div>
+         </div>
+        </div>
+
+
+
+        <!--Business Tools-->
+             <div id="business_tools">
+             <br>
+             <br>
+             <div class="columns" >
+                 <div class="column is-8 is-offset-2">
+                 <h1 class="title has-text-centered">
+                    Business Tools
+                 </h1>
+                 <h2 class="subtitle has-text-centered">
+                    Learning business tools makes you job-ready as you become equipped to professionally display the reports, data and research. This exponentially enhances productivity and efficiency.
+                 </h2>
+                 <br>
+                 <h2 class="subtitle">What will you learn?</h2>
+                    <p>
+                        <ul>
+                            <li>Microsoft Excel </li>
+                            <li>Google Workspace</li>
+                            <li>Project management tools</li>
+                            <li>Team management tools</li>
+                            <li>Website builder tools</li>
+                            <li>Making professional PPTs, brochures, reports, social media posts and more!</li>
+                        </ul>
+                    </p><br>
+                 <div class="services-image-container">
+                     <div>
+                        <h2 class="subtitle">Who can join?</h2>
+                            <p>
+                                <ul>
+                                    <li>Anyone who is keen to do things professionally and efficiently</li>
+                                    <li>Anyone planning to climb up the corporate ladder</li>
+                                    <li>Individuals who find business intelligence interesting</li>
+                                    <li>Anyone keen on strategizing quantitative and qualitative data</li>
+                                </ul>
+                            </p>
+                     </div>
+                     <div>
+                        <figure class="image service-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture5.webp">
+                              <source type="image/png" srcset="static/images/services/Picture5.png">
+                              <img src="static/images/services/Picture5.png">
+                            </picture>
+                        </figure>
+                     </div>
+                 </div>
+                 <br> 
+                 <h2 class="subtitle">Why choose <b>Elucidation Today</b>?</h2>
+                 <p>
+                    <ul>
+                        <li>Our mentors are industry experts</li>
+                        <li>Limited seats = More attention</li>
+                        <li>You actually work on data than just listening to theory</li>
+                        <li>We promise to make you a pro!</li>
+                    </ul>
+                </p>
+                 <div class="services-image-container">
+                    <p class="bottom-text">With most of the industries operating online, being good at these tools is a must! <a href="book-a-session">Enroll now.</a>
+                    </p>
+                </div>
+            </div>
+         </div>
+        </div>
+
+
+
+        <!--Financial Literacy-->
+             <div id="financial_literacy">
+             <br>
+             <br>
+             <div class="columns" >
+                 <div class="column is-8 is-offset-2">
+                 <h1 class="title has-text-centered">
+                    Financial Literacy
+                 </h1>
+                 <h2 class="subtitle has-text-centered">
+                    In India, just <a href="http://financialexpress.com/market/only-27-indians-are-financially-literate-sebis-garg/2134842/">27% of the population</a> is financially literate. Finance and accounting is the language of business.
+                 </h2>
+                 <br>
+                 <h2 class="subtitle">What will you learn?</h2>
+                    <p>
+                        <ul>
+                            <li>How to grow your money </li>
+                            <li>Power of compounding and investing in mutual funds</li>
+                            <li>Correct way of budgeting, investing, and beating inflation</li>
+                            <li>Filing income tax return, instruments of insurance</li>
+                        </ul>
+                    </p><br>
+                 <div class="services-image-container">
+                     <div>
+                        <h2 class="subtitle">Who can join?</h2>
+                            <p>
+                                <ul>
+                                    <li>Financial literacy, being an essential skill, is open to all age groups</li>
+                                    <li>Anyone willing to make informed decisions about their financial journey</li>
+                                    <li>Anyone who wishes to build a regular source of passive income</li>
+                                    <li>Anyone who wants to get started in the world of finance</li>
+                                </ul>
+                            </p>
+                     </div>
+                     <div>
+                        <figure class="image service-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture5.webp">
+                              <source type="image/png" srcset="static/images/services/Picture5.png">
+                              <img src="static/images/services/Picture5.png">
+                            </picture>
+                        </figure>
+                     </div>
+                 </div>
+                 <br> 
+                 <h2 class="subtitle">Why choose <b>Elucidation Today</b>?</h2>
+                 <p>
+                    <ul>
+                        <li>We help you build a passive source of income</li>
+                        <li>We teach finance via games, memes, and activities </li>
+                        <li>We teach based on your current level of understanding</li>
+                        <li>We help you set a financial goal and work towards achieving it</li>
+                    </ul>
+                </p>
+                 <div class="services-image-container">
+                    <p class="bottom-text">We make your money work for you instead of vice-versa. <a href="book-a-session">Book a session.</a>
+                    </p>
+                </div>
+            </div>
+         </div>
+        </div>
+
+
+        <!--Legal Literacy-->
+             <div id="legal_literacy">
+             <br>
+             <br>
+             <div class="columns" >
+                 <div class="column is-8 is-offset-2">
+                 <h1 class="title has-text-centered">
+                    Legal Literacy
+                 </h1>
+                 <h2 class="subtitle has-text-centered">
+                    Everyday laws are not just for lawyers. We equip you with the awareness of laws that come in handy on a daily basis.
+                 </h2>
+                 <br>
+                 <h2 class="subtitle">What will you learn?</h2>
+                    <p>
+                        <ul>
+                            <li>Laws related to women and LGBTQ+ community</li>
+                            <li>Legalities of a live-in relationship</li>
+                            <li>Intellectual Property Rights</li>
+                            <li>Consumer Protection Act</li>
+                            <li>Right to Information</li>
+                            <li>Filing an FIR</li>
+                        </ul>
+                    </p><br>
+                 <div class="services-image-container">
+                     <div>
+                        <h2 class="subtitle">Who can join?</h2>
+                            <p>
+                                <ul>
+                                    <li>Instead of limiting this crucial information to a certain “who”, individuals from all walks of life can enroll.</li>
+                                </ul>
+                            </p>
+                     </div>
+                     <div>
+                        <figure class="image service-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture5.webp">
+                              <source type="image/png" srcset="static/images/services/Picture5.png">
+                              <img src="static/images/services/Picture5.png">
+                            </picture>
+                        </figure>
+                     </div>
+                 </div>
+                 <br> 
+                 <h2 class="subtitle">Why choose <b>Elucidation Today</b>?</h2>
+                 <p>
+                    <ul>
+                        <li>Our instructors are certified experts in this domain</li>
+                        <li>With an interactive session, you get more insights on the laws and case studies</li>
+                        <li>Advocates from Supreme Court of India are speakers at our sessions</li>
+                    </ul>
+                </p>
+                 <div class="services-image-container">
+                    <p class="bottom-text">
+                    </p>
+                </div>
+            </div>
+         </div>
+        </div>
+
+
+
+        <!--Sex Education-->
+             <div id="sex_ed">
+             <br>
+             <br>
+             <div class="columns" >
+                 <div class="column is-8 is-offset-2">
+                 <h1 class="title has-text-centered">
+                    Sex Education
+                 </h1>
+                 <h2 class="subtitle has-text-centered">
+                    What if we tell you that it is a <a href="https://scroll.in/article/974230/in-india-the-burden-of-contraception-still-falls-on-women">woman's responsibility</a> to prevent pregnancy and <a href="https://asiapacific.unfpa.org/sites/default/files/pub-pdf/Study%20on%20Masculinity%2C%20Intimate%20Partner%20Violence%20and%20Son%20Preference%20in%20India.pdf">agree to having sex</a> with their partner whenever the partner wants? Many believe it! Make sure you are not one of them.<br>
+                    The fact that <a href="https://en.unesco.org/news/why-comprehensive-sexuality-education-important">two out of three girls</a> have no idea what menstruation is when they begin menstruation highlights the need for such education enough!
+                 </h2>
+                 <br>
+                 <h2 class="subtitle">Why learn this?</h2>
+                    <p>
+                        <ul>
+                            <li>To improve knowledge and outlook towards sexual and reproductive health</li>
+                            <li>To prepare for a fulfilling life, free of taboos related to sex</li>
+                            <li>To prevent ourselves and others from unsafe sexual behaviors</li>
+                            <li>To understand and respect own and others’ bodies</li>
+                        </ul>
+                    </p><br>
+                 <br>
+                 <h2 class="subtitle">What will you learn?</h2>
+                    <p>
+                        <ul>
+                            <li>Gender and sexuality</li>
+                            <li>Healthier and safer sex with contraceptives</li>
+                            <li>Consent and communication before, during and after sex</li>
+                            <li>Sustainable menstruation: What and How?</li>
+                        </ul>
+                    </p><br>
+                 <div class="services-image-container">
+                     <div>
+                        <h2 class="subtitle">Who can join?</h2>
+                            <p>
+                                <ul>
+                                    <li>Anyone of age 13 and above</li>
+                                    <li>Teachers and guardians</li>
+                                    <li>Counsellors and health professionals</li>
+                                    <li>Married/unmarried couples</li>
+                                </ul>
+                            </p>
+                     </div>
+                     <div>
+                        <figure class="image service-image">
+                            <picture>
+                              <source type="image/webp" srcset="static/webp_images/services/Picture5.webp">
+                              <source type="image/png" srcset="static/images/services/Picture5.png">
+                              <img src="static/images/services/Picture5.png">
+                            </picture>
+                        </figure>
+                     </div>
+                 </div>
+                 <br> 
+                 <h2 class="subtitle">Why choose <b>Elucidation Today</b>?</h2>
+                 <p>
+                    <ul>
+                        <li>Diverse cohort = More perspectives</li>
+                        <li>We help you bust myths and taboos logically</li>
+                        <li>We are a safe space</li>
+                        <li>We understand the sensitivity and discomfort associated with this topic</li>
+                    </ul>
+                </p>
+                 <div class="services-image-container">
+                    <p class="bottom-text">
+                        We are a safe space. <a href="book-a-session">Book a session</a>
+                    </p>
+                </div>
+            </div>
+         </div>
+        </div>
+
+    </div>
+    </section>
+    <div class="OpenImage" id="OpenImageId">
+        <div class="CloseImage" onclick="closeImage()">
+            &times;
+        </div>
+        <div class="OpenImageContainer">
+            <img src="" alt="" id="OpenImageTagId">
+        </div>
+    </div>
+    <footer class="footer has-background-dark" id="socials">
+    </footer>
+    <a id="go-to-top"></a>
+  </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script-->
+    <!--script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script-->
+    <script type="text/javascript" src="static/js/elucidation.js"></script>
+
+
+<!--script>
+    AOS.init();
+</script-->
+<script>
+     function openTab(event, tabName)
+     {
+        event.preventDefault();
+        if(tabName.includes("ind_")){
+            document.getElementById("inst_"+tabName.split("_")[1]+"_tab").className = document.getElementById("inst_"+tabName.split("_")[1]+"_tab").className.replace(" is-active","");
+            document.getElementById("inst_"+tabName.split("_")[1]).style.display = "none";
+        }else{
+            document.getElementById("ind_"+tabName.split("_")[1]+"_tab").className = document.getElementById("ind_"+tabName.split("_")[1]+"_tab").className.replace(" is-active","");
+            document.getElementById("ind_"+tabName.split("_")[1]).style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+        event.currentTarget.className += " is-active"; 
+     }
+
+    $(document).ready(function() {
+        var s = $("#services-head");
+        var pos = s.position();                    
+        $(window).scroll(function() {
+            var windowpos = $(window).scrollTop();
+            if (windowpos >= 51) {
+                s.addClass("services-head-class");
+                $('#services-start').css('margin-top','130px');
+            } else {
+                s.removeClass("services-head-class"); 
+                $('#services-start').css('margin-top','0px');
+            }
+        });
+    });
+</script>
+<script>
+    (function()
+      {
+        var burger=document.querySelector('.burger');
+        var nav=document.querySelector('#'+burger.dataset.target);
+
+
+        burger.addEventListener('click', function()
+        {
+            burger.classList.toggle('is-active');
+            nav.classList.toggle('is-active' );
+        });
+      })();
+
+    $('#socials').load('footer.html');
+
+</script>
+<script type="text/javascript">
+function onclickHandler(props) {
+    document.getElementById("OpenImageId").style.display = "block";
+    document.getElementById("OpenImageTagId").src = props.target.srcset || props.target.src;
+}
+function closeImage(){
+    console.log('HEY');
+    document.getElementById("OpenImageId").style.display = "none";
+}
+window.onload=function() {
+  var Tags=document.getElementsByTagName('figure');
+  for (var i=Tags.length-1; i>=0; i--) {
+    if(Tags[i].onclick) {
+      var oldOnClick = Tags[i].onclick;
+      Tags[i].onclick = function() {
+        onclickHandler.call(this);
+        oldOnClick.call(this);
+      }
+    } else {
+      Tags[i].onclick = onclickHandler;
+    }
+  }
+}
+
+var listOfServices = ['career', 'resume', 'linkedin', 'mentoring', 'content_writing', 'web_development', 'business_tools', 'business_communication', 'financial_literacy', 'legal_literacy', 'sex_ed'];
+(function(){
+    for(let i=0; i<listOfServices.length; i++){
+        document.getElementById(listOfServices[i]).style.display = "none";
+    }
+    document.getElementById(listOfServices[0]).style.display = "block";
+})();
+function openService(service){
+    for(let i=0; i<listOfServices.length; i++){
+        document.getElementById(listOfServices[i]).style.display = "none";
+    }
+        document.getElementById(service).style.display = "block";
+}
+
+function toggleSideBar(){
+    const menuIcon = document.getElementById("menu-bar-icon");
+    const menuItems = document.getElementById("menu-bar-items");
+    const menuBarFlex = document.getElementById("menu-bar-flex");
+
+    if(menuIcon.classList.contains("Change")){
+        menuIcon.classList.remove("Change");
+        menuItems.style.width = "0";
+        menuBarFlex.style.flexBasis = "0%";
+    }else{
+        menuIcon.classList.add("Change")
+        menuItems.style.width = "100%";
+        menuBarFlex.style.flexBasis = "30%";
+    }
+}
+</script>
+</html>

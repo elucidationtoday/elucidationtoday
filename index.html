@@ -672,6 +672,22 @@
 						</div>
 					</a>
 				</div>
+				<div class="platform">
+					<a onclick="openImageFull('static/images/featured/ashoka_magazine.png')">
+						<img src="static/images/featured/ashoka.jpg">
+						<div class="platform-name">
+							Ashoka University
+						</div>
+					</a>
+				</div>
+				<div class="platform">
+					<a onclick="openImageFull('static/images/featured/ibs_jaipur_magazine.png')">
+						<img src="static/images/featured/ibs_jaipur.jpg">
+						<div class="platform-name">
+							IBS Jaipur
+						</div>
+					</a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -745,6 +761,14 @@
 
 
 	</section>
+	<div id="snap-popup">
+		<span class="close" onclick="$('#snap-popup').hide();">&times;</span>
+		<a href="https://forms.gle/hEUSPzcqunZsowkt8" target="_blank"><img src="static/images/events/startup_bootcamp.jpg"></a>
+	</div>
+	<div id="featured-image-popup">
+		<span class="close" onclick="$('#featured-image-popup').hide();">&times;</span>
+		<img src="" id="featured-image-popup-img">
+	</div>
 
 	<footer class="footer has-background-dark" id="socials">
 	</footer>
@@ -893,18 +917,18 @@
               $("fieldset").attr("disabled","disabled");  
               
               setTimeout(resetForm, 2000);
-
-
-            
-
-              
-
-
             }
-
-
           )
       });
+    var t = setTimeout(function(){
+        $('#snap-popup').show();
+    }, 3000);
+
+    function openImageFull(url){
+    	$('#featured-image-popup-img').attr('src',url);
+    	$('#featured-image-popup').show();
+    }
+
   </script>
 <!--script>
  if (!navigator.serviceWorker.controller) {

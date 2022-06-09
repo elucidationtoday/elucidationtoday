@@ -127,6 +127,21 @@
 .achievements{
 	background: #FDF7E8;
 }
+.description-text{
+	margin: 20px 0;
+}
+.action-buttons button{
+	outline: none;
+	border: 0;
+	border-radius: 5px;
+	background: #4a949f;
+	color: #FFF;
+	padding: 10px 25px;
+	cursor: pointer;
+}
+.action-buttons button:hover{
+	background: #0B4F57;
+}
 @media only screen and (min-width: 1024px){
 	.event-gallery{
 		background: linear-gradient(180deg, #4a949f 30%, #FDF7E8 70%);

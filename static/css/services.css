@@ -18,19 +18,15 @@
 .services-head-class{
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 1000;
   top: 0;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 .hero{
   padding-top: 0px;
 }
-.bottom-text{
+/*.bottom-text{
   margin-top: 20px;
-}
-.services-image-container ul{
-  padding-left: 20px;
-  box-sizing: border-box;
 }
 .menu-items-font li{
   font-size: 14px;
@@ -46,7 +42,7 @@
 }
 .menu-list li ul{
   border: 0;
-}
+}*/
 @media (max-width: 768px){
   .fixed-button-services a > div{
     left: 2%;
