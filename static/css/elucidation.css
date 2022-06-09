@@ -1481,6 +1481,15 @@ Abhishek CSS
 .mentor-section .mentors-details .level-left{
   display: block;
 }
+@media (max-width: 768px){
+  .about-us .services-icons{
+    display: block;
+  }
+  .services-icons .item{
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
 /* ABOUT */
 
 /* FOOTER */
