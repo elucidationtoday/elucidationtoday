@@ -95,9 +95,13 @@
 .event-item .events-details .desc-sub-points{
 	font-size: 16px;
 }
+.event-item .events-details .desc-sub-points ul{
+	list-style: auto;
+}
 .event-item .events-details .desc-sub-points.highlights ul{
 	display: flex;
 	justify-content: space-between;
+	list-style: none;
 }
 .event-item .events-details .desc-sub-points.highlights ul li{
 	margin-right: 20px;
